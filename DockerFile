@@ -1,0 +1,12 @@
+# Start with a base image containing Java runtime
+FROM openjdk:8-jdk-alpine
+
+# Make port 80 available to the world outside this container
+EXPOSE 8083
+
+COPY target/customer-enrollment-api.jar  customer-enrollment-api.jar
+
+# Run the jar file
+ENTRYPOINT ["java","-jar","/customer-enrollment-api.jar"]
+
+#ENTRYPOINT ["java","-Dspring.profiles.active=${env}","-jar","/customers-dopayments-api-1.0-SNAPSHOT.jar"]

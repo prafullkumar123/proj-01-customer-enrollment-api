@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+Build-Jdk-Spec: 13
+Implementation-Title: customer-enrollment-api
+Implementation-Version: 2.2.6.RELEASE
+Main-Class: com.citibank.enroll.customers.Application
+Created-By: Maven Integration for Eclipse
+

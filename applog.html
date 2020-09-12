@@ -1,0 +1,2841 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>HTML Layout Example</title>
+<style type="text/css">
+<!--
+body, table {
+	font-family: arial, sans-serif;
+	font-size: x-small;
+}
+
+th {
+	background: #336699;
+	color: #FFFFFF;
+	text-align: left;
+}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+	<hr size="1" noshade>
+	Log session start time Thu Aug 06 23:52:20 IST 2020
+	<br>
+	<br>
+	<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466"
+		width="100%">
+		<tr>
+			<th>Time</th>
+			<th>Thread</th>
+			<th>Level</th>
+			<th>Category</th>
+			<th>File:Line</th>
+			<th>Message</th>
+		</tr>
+
+		<tr>
+			<td>0</td>
+			<td title="http-nio-9090-exec-2 thread">http-nio-9090-exec-2</td>
+			<td title="Level">INFO</td>
+			<td
+				title="com.citibank.enroll.customers.controller.EnrollmentController category">com.citibank.enroll.customers.controller.EnrollmentController</td>
+			<td>EnrollmentController.java:55</td>
+			<td title="Message">Entered into Resouce Layer ::
+				EnrollmentResourceReq(clientContext=ClientContext(clientId=C-101,
+				channelId=mbile, requestid=null, msgTimeStamp=Fri Jul 24 20:15:59
+				IST 2020), custInfo=CustmerInfo(mobileNo=[9981886715, 7987037711],
+				cardNo=6104001500002436, cvvNo=185, expDate=03-25,
+				nameOnCard=Prafull Kuamr),
+				serviceDetails=com.citibank.enroll.customers.model.ServiceDetails@28de9c01)</td>
+		</tr>
+
+		<tr>
+			<td>7</td>
+			<td title="http-nio-9090-exec-2 thread">http-nio-9090-exec-2</td>
+			<td title="Level">INFO</td>
+			<td
+				title="com.citibank.enroll.customers.service.impl.EnrollmentProcessImpl category">com.citibank.enroll.customers.service.impl.EnrollmentProcessImpl</td>
+			<td>EnrollmentProcessImpl.java:35</td>
+			<td title="Message">Enter into Process ::
+				EnrollmentProcessReq(clientId=C-101, channelId=mbile,
+				mobileNo=[9981886715, 7987037711], cardNo=6104001500002436,
+				cvvNo=185, expDate=03-25, nameOnCard=Prafull Kuamr)</td>
+		</tr>
+
+		<tr>
+			<td>7</td>
+			<td title="http-nio-9090-exec-2 thread">http-nio-9090-exec-2</td>
+			<td title="Level"><font color="#339933">DEBUG</font></td>
+			<td
+				title="com.citibank.enroll.customers.service.impl.EnrollmentProcessImpl category">com.citibank.enroll.customers.service.impl.EnrollmentProcessImpl</td>
+			<td>EnrollmentProcessImpl.java:38</td>
+			<td title="Message">EnrollmentProcessImpl Request</td>
+		</tr>
+
+		<tr>
+			<td>8</td>
+			<td title="http-nio-9090-exec-2 thread">http-nio-9090-exec-2</td>
+			<td title="Level">INFO</td>
+			<td
+				title="com.citibank.enroll.customers.svcclient.impl.CardverifyServicClientImpl category">com.citibank.enroll.customers.svcclient.impl.CardverifyServicClientImpl</td>
+			<td>CardverifyServicClientImpl.java:16</td>
+			<td title="Message">Entered into Card Verify service
+				CardverifyServicClientReq(cardNo=6104001500002436, cvvNo=185,
+				expDate=185, nameOnCard=Prafull Kuamr)</td>
+		</tr>
+
+		<tr>
+			<td>9</td>
+			<td title="http-nio-9090-exec-2 thread">http-nio-9090-exec-2</td>
+			<td title="Level"><font color="#339933">DEBUG</font></td>
+			<td
+				title="com.citibank.enroll.customers.svcclient.impl.CardverifyServicClientImpl category">com.citibank.enroll.customers.svcclient.impl.CardverifyServicClientImpl</td>
+			<td>CardverifyServicClientImpl.java:17</td>
+			<td title="Message">CardverifyServicClientImpl Request</td>
+		</tr>
+
+		<tr>
+			<td>9</td>
+			<td title="http-nio-9090-exec-2 thread">http-nio-9090-exec-2</td>
+			<td title="Level"><font color="#339933">DEBUG</font></td>
+			<td
+				title="com.citibank.enroll.customers.svcclient.impl.CardverifyServicClientImpl category">com.citibank.enroll.customers.svcclient.impl.CardverifyServicClientImpl</td>
+			<td>CardverifyServicClientImpl.java:25</td>
+			<td title="Message">CardverifyServicClientImpl Exit</td>
+		</tr>
+
+		<tr>
+			<td>10</td>
+			<td title="http-nio-9090-exec-2 thread">http-nio-9090-exec-2</td>
+			<td title="Level"><font color="#339933">DEBUG</font></td>
+			<td
+				title="com.citibank.enroll.customers.dao.impl.EnrollmentDAOImpl category">com.citibank.enroll.customers.dao.impl.EnrollmentDAOImpl</td>
+			<td>EnrollmentDAOImpl.java:16</td>
+			<td title="Message">Entered into EnrollmentDAOImpl</td>
+		</tr>
+
+		<tr>
+			<td>10</td>
+			<td title="http-nio-9090-exec-2 thread">http-nio-9090-exec-2</td>
+			<td title="Level">INFO</td>
+			<td
+				title="com.citibank.enroll.customers.dao.impl.EnrollmentDAOImpl category">com.citibank.enroll.customers.dao.impl.EnrollmentDAOImpl</td>
+			<td>EnrollmentDAOImpl.java:17</td>
+			<td title="Message">EnrollmentDAOImpl
+				RequestEnrollmentDAOReq(clientId=mbile, channelId=mbile,
+				mobileNo=null, cardNo=6104001500002436, cvvNo=185, expDate=03-25,
+				nameOnCard=Prafull Kuamr)</td>
+		</tr>
+
+		<tr>
+			<td>11</td>
+			<td title="http-nio-9090-exec-2 thread">http-nio-9090-exec-2</td>
+			<td title="Level"><font color="#339933">DEBUG</font></td>
+			<td
+				title="com.citibank.enroll.customers.dao.impl.EnrollmentDAOImpl category">com.citibank.enroll.customers.dao.impl.EnrollmentDAOImpl</td>
+			<td>EnrollmentDAOImpl.java:51</td>
+			<td title="Message">EnrollmentDAOImpl Exit</td>
+		</tr>
+
+		<tr>
+			<td>11</td>
+			<td title="http-nio-9090-exec-2 thread">http-nio-9090-exec-2</td>
+			<td title="Level"><font color="#339933">DEBUG</font></td>
+			<td
+				title="com.citibank.enroll.customers.service.impl.EnrollmentProcessImpl category">com.citibank.enroll.customers.service.impl.EnrollmentProcessImpl</td>
+			<td>EnrollmentProcessImpl.java:55</td>
+			<td title="Message">Exit from Enrollment Process</td>
+		</tr>
+
+		<tr>
+			<td>12</td>
+			<td title="http-nio-9090-exec-2 thread">http-nio-9090-exec-2</td>
+			<td title="Level">INFO</td>
+			<td
+				title="com.citibank.enroll.customers.controller.EnrollmentController category">com.citibank.enroll.customers.controller.EnrollmentController</td>
+			<td>EnrollmentController.java:91</td>
+			<td title="Message">Exit From Resouce Layer ::
+				EnrollmentResourceRes(status=StatusBlock(respCode=good,
+				respMsg=good, status=delivered))</td>
+		</tr><!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>HTML Layout Example</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Tue Aug 11 21:50:57 IST 2020<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="http-nio-9090-exec-5 thread">http-nio-9090-exec-5</td>
+<td title="Level">INFO</td>
+<td title="com.citibank.enroll.customers.controller.EnrollmentController category">com.citibank.enroll.customers.controller.EnrollmentController</td>
+<td>EnrollmentController.java:55</td>
+<td title="Message">Entered into Resouce Layer :: EnrollmentResourceReq(clientContext=ClientContext(clientId=C-101, channelId=mbile, requestid=null, msgTimeStamp=Fri Jul 24 20:15:59 IST 2020), custInfo=CustmerInfo(mobileNo=[9981886715, 7987037711], cardNo=6104001500002436, cvvNo=185, expDate=03-25, nameOnCard=Prafull Kuamr), serviceDetails=com.citibank.enroll.customers.model.ServiceDetails@4c1015ba)</td>
+</tr>
+
+<tr>
+<td>6</td>
+<td title="http-nio-9090-exec-5 thread">http-nio-9090-exec-5</td>
+<td title="Level">INFO</td>
+<td title="com.citibank.enroll.customers.service.impl.EnrollmentProcessImpl category">com.citibank.enroll.customers.service.impl.EnrollmentProcessImpl</td>
+<td>EnrollmentProcessImpl.java:35</td>
+<td title="Message">Enter into Process  :: EnrollmentProcessReq(clientId=C-101, channelId=mbile, mobileNo=[9981886715, 7987037711], cardNo=6104001500002436, cvvNo=185, expDate=03-25, nameOnCard=Prafull Kuamr)</td>
+</tr>
+
+<tr>
+<td>7</td>
+<td title="http-nio-9090-exec-5 thread">http-nio-9090-exec-5</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.citibank.enroll.customers.service.impl.EnrollmentProcessImpl category">com.citibank.enroll.customers.service.impl.EnrollmentProcessImpl</td>
+<td>EnrollmentProcessImpl.java:38</td>
+<td title="Message">EnrollmentProcessImpl Request </td>
+</tr>
+
+<tr>
+<td>7</td>
+<td title="http-nio-9090-exec-5 thread">http-nio-9090-exec-5</td>
+<td title="Level">INFO</td>
+<td title="com.citibank.enroll.customers.svcclient.impl.CardverifyServicClientImpl category">com.citibank.enroll.customers.svcclient.impl.CardverifyServicClientImpl</td>
+<td>CardverifyServicClientImpl.java:16</td>
+<td title="Message">Entered into Card Verify service CardverifyServicClientReq(cardNo=6104001500002436, cvvNo=185, expDate=185, nameOnCard=Prafull Kuamr)</td>
+</tr>
+
+<tr>
+<td>8</td>
+<td title="http-nio-9090-exec-5 thread">http-nio-9090-exec-5</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.citibank.enroll.customers.svcclient.impl.CardverifyServicClientImpl category">com.citibank.enroll.customers.svcclient.impl.CardverifyServicClientImpl</td>
+<td>CardverifyServicClientImpl.java:17</td>
+<td title="Message">CardverifyServicClientImpl  Request </td>
+</tr>
+
+<tr>
+<td>9</td>
+<td title="http-nio-9090-exec-5 thread">http-nio-9090-exec-5</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.citibank.enroll.customers.svcclient.impl.CardverifyServicClientImpl category">com.citibank.enroll.customers.svcclient.impl.CardverifyServicClientImpl</td>
+<td>CardverifyServicClientImpl.java:25</td>
+<td title="Message">CardverifyServicClientImpl  Exit</td>
+</tr>
+
+<tr>
+<td>9</td>
+<td title="http-nio-9090-exec-5 thread">http-nio-9090-exec-5</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.citibank.enroll.customers.dao.impl.EnrollmentDAOImpl category">com.citibank.enroll.customers.dao.impl.EnrollmentDAOImpl</td>
+<td>EnrollmentDAOImpl.java:16</td>
+<td title="Message">Entered into EnrollmentDAOImpl</td>
+</tr>
+
+<tr>
+<td>10</td>
+<td title="http-nio-9090-exec-5 thread">http-nio-9090-exec-5</td>
+<td title="Level">INFO</td>
+<td title="com.citibank.enroll.customers.dao.impl.EnrollmentDAOImpl category">com.citibank.enroll.customers.dao.impl.EnrollmentDAOImpl</td>
+<td>EnrollmentDAOImpl.java:17</td>
+<td title="Message">EnrollmentDAOImpl  RequestEnrollmentDAOReq(clientId=mbile, channelId=mbile, mobileNo=null, cardNo=6104001500002436, cvvNo=185, expDate=03-25, nameOnCard=Prafull Kuamr)</td>
+</tr>
+
+<tr>
+<td>10</td>
+<td title="http-nio-9090-exec-5 thread">http-nio-9090-exec-5</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.citibank.enroll.customers.dao.impl.EnrollmentDAOImpl category">com.citibank.enroll.customers.dao.impl.EnrollmentDAOImpl</td>
+<td>EnrollmentDAOImpl.java:51</td>
+<td title="Message">EnrollmentDAOImpl  Exit</td>
+</tr>
+
+<tr>
+<td>11</td>
+<td title="http-nio-9090-exec-5 thread">http-nio-9090-exec-5</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.citibank.enroll.customers.service.impl.EnrollmentProcessImpl category">com.citibank.enroll.customers.service.impl.EnrollmentProcessImpl</td>
+<td>EnrollmentProcessImpl.java:55</td>
+<td title="Message">Exit from Enrollment Process</td>
+</tr>
+
+<tr>
+<td>12</td>
+<td title="http-nio-9090-exec-5 thread">http-nio-9090-exec-5</td>
+<td title="Level">INFO</td>
+<td title="com.citibank.enroll.customers.controller.EnrollmentController category">com.citibank.enroll.customers.controller.EnrollmentController</td>
+<td>EnrollmentController.java:91</td>
+<td title="Message">Exit From Resouce Layer :: EnrollmentResourceRes(status=StatusBlock(respCode=good, respMsg=good, status=delivered))</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>HTML Layout Example</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Mon Aug 24 23:56:31 IST 2020<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="http-nio-9091-exec-2 thread">http-nio-9091-exec-2</td>
+<td title="Level">INFO</td>
+<td title="com.citibank.enroll.customers.controller.EnrollmentController category">com.citibank.enroll.customers.controller.EnrollmentController</td>
+<td>EnrollmentController.java:55</td>
+<td title="Message">Entered into Resouce Layer :: EnrollmentResourceReq(clientContext=ClientContext(clientId=C-101, channelId=mbile, requestid=null, msgTimeStamp=Fri Jul 24 20:15:59 IST 2020), custInfo=CustmerInfo(mobileNo=[9981886715, 7987037711], cardNo=6104001500002436, cvvNo=185, expDate=03-25, nameOnCard=Prafull Kuamr), serviceDetails=com.citibank.enroll.customers.model.ServiceDetails@501ee6de)</td>
+</tr>
+
+<tr>
+<td>8</td>
+<td title="http-nio-9091-exec-2 thread">http-nio-9091-exec-2</td>
+<td title="Level">INFO</td>
+<td title="com.citibank.enroll.customers.service.impl.EnrollmentProcessImpl category">com.citibank.enroll.customers.service.impl.EnrollmentProcessImpl</td>
+<td>EnrollmentProcessImpl.java:35</td>
+<td title="Message">Enter into Process  :: EnrollmentProcessReq(clientId=C-101, channelId=mbile, mobileNo=[9981886715, 7987037711], cardNo=6104001500002436, cvvNo=185, expDate=03-25, nameOnCard=Prafull Kuamr)</td>
+</tr>
+
+<tr>
+<td>9</td>
+<td title="http-nio-9091-exec-2 thread">http-nio-9091-exec-2</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.citibank.enroll.customers.service.impl.EnrollmentProcessImpl category">com.citibank.enroll.customers.service.impl.EnrollmentProcessImpl</td>
+<td>EnrollmentProcessImpl.java:38</td>
+<td title="Message">EnrollmentProcessImpl Request </td>
+</tr>
+
+<tr>
+<td>10</td>
+<td title="http-nio-9091-exec-2 thread">http-nio-9091-exec-2</td>
+<td title="Level">INFO</td>
+<td title="com.citibank.enroll.customers.svcclient.impl.CardverifyServicClientImpl category">com.citibank.enroll.customers.svcclient.impl.CardverifyServicClientImpl</td>
+<td>CardverifyServicClientImpl.java:16</td>
+<td title="Message">Entered into Card Verify service CardverifyServicClientReq(cardNo=6104001500002436, cvvNo=185, expDate=185, nameOnCard=Prafull Kuamr)</td>
+</tr>
+
+<tr>
+<td>11</td>
+<td title="http-nio-9091-exec-2 thread">http-nio-9091-exec-2</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.citibank.enroll.customers.svcclient.impl.CardverifyServicClientImpl category">com.citibank.enroll.customers.svcclient.impl.CardverifyServicClientImpl</td>
+<td>CardverifyServicClientImpl.java:17</td>
+<td title="Message">CardverifyServicClientImpl  Request </td>
+</tr>
+
+<tr>
+<td>11</td>
+<td title="http-nio-9091-exec-2 thread">http-nio-9091-exec-2</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.citibank.enroll.customers.svcclient.impl.CardverifyServicClientImpl category">com.citibank.enroll.customers.svcclient.impl.CardverifyServicClientImpl</td>
+<td>CardverifyServicClientImpl.java:25</td>
+<td title="Message">CardverifyServicClientImpl  Exit</td>
+</tr>
+
+<tr>
+<td>12</td>
+<td title="http-nio-9091-exec-2 thread">http-nio-9091-exec-2</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.citibank.enroll.customers.dao.impl.EnrollmentDAOImpl category">com.citibank.enroll.customers.dao.impl.EnrollmentDAOImpl</td>
+<td>EnrollmentDAOImpl.java:16</td>
+<td title="Message">Entered into EnrollmentDAOImpl</td>
+</tr>
+
+<tr>
+<td>13</td>
+<td title="http-nio-9091-exec-2 thread">http-nio-9091-exec-2</td>
+<td title="Level">INFO</td>
+<td title="com.citibank.enroll.customers.dao.impl.EnrollmentDAOImpl category">com.citibank.enroll.customers.dao.impl.EnrollmentDAOImpl</td>
+<td>EnrollmentDAOImpl.java:17</td>
+<td title="Message">EnrollmentDAOImpl  RequestEnrollmentDAOReq(clientId=mbile, channelId=mbile, mobileNo=null, cardNo=6104001500002436, cvvNo=185, expDate=03-25, nameOnCard=Prafull Kuamr)</td>
+</tr>
+
+<tr>
+<td>13</td>
+<td title="http-nio-9091-exec-2 thread">http-nio-9091-exec-2</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.citibank.enroll.customers.dao.impl.EnrollmentDAOImpl category">com.citibank.enroll.customers.dao.impl.EnrollmentDAOImpl</td>
+<td>EnrollmentDAOImpl.java:51</td>
+<td title="Message">EnrollmentDAOImpl  Exit</td>
+</tr>
+
+<tr>
+<td>14</td>
+<td title="http-nio-9091-exec-2 thread">http-nio-9091-exec-2</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.citibank.enroll.customers.service.impl.EnrollmentProcessImpl category">com.citibank.enroll.customers.service.impl.EnrollmentProcessImpl</td>
+<td>EnrollmentProcessImpl.java:55</td>
+<td title="Message">Exit from Enrollment Process</td>
+</tr>
+
+<tr>
+<td>15</td>
+<td title="http-nio-9091-exec-2 thread">http-nio-9091-exec-2</td>
+<td title="Level">INFO</td>
+<td title="com.citibank.enroll.customers.controller.EnrollmentController category">com.citibank.enroll.customers.controller.EnrollmentController</td>
+<td>EnrollmentController.java:91</td>
+<td title="Message">Exit From Resouce Layer :: EnrollmentResourceRes(status=StatusBlock(respCode=good, respMsg=good, status=delivered))</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>HTML Layout Example</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Wed Sep 02 13:03:37 IST 2020<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="http-nio-9997-exec-7 thread">http-nio-9997-exec-7</td>
+<td title="Level">INFO</td>
+<td title="com.citibank.enroll.customers.controller.EnrollmentController category">com.citibank.enroll.customers.controller.EnrollmentController</td>
+<td>EnrollmentController.java:61</td>
+<td title="Message">Entered into Resouce Layer :: EnrollmentResourceReq(clientContext=null, custInfo=CustmerInfo(mobileNo=[string], cardNo=string, cvvNo=string, expDate=string, nameOnCard=string), serviceDetails=com.citibank.enroll.customers.model.ServiceDetails@104f20b9)</td>
+</tr>
+
+<tr>
+<td>4</td>
+<td title="http-nio-9997-exec-7 thread">http-nio-9997-exec-7</td>
+<td title="Level"><font color="#993300"><strong>ERROR</strong></font></td>
+<td title="com.citibank.enroll.customers.validator.EnrollmentReqValidator category">com.citibank.enroll.customers.validator.EnrollmentReqValidator</td>
+<td>EnrollmentReqValidator.java:24</td>
+<td title="Message">Entered into request obj null if</td>
+</tr>
+
+<tr>
+<td>6</td>
+<td title="http-nio-9997-exec-7 thread">http-nio-9997-exec-7</td>
+<td title="Level">INFO</td>
+<td title="com.citibank.enroll.customers.controller.EnrollmentController category">com.citibank.enroll.customers.controller.EnrollmentController</td>
+<td>EnrollmentController.java:97</td>
+<td title="Message">Exit From Resouce Layer :: EnrollmentResourceRes(status=StatusBlock(respCode=err001, respMsg=request object is null or empty, status=null))</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>HTML Layout Example</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Thu Sep 03 12:34:00 IST 2020<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="http-nio-9999-exec-2 thread">http-nio-9999-exec-2</td>
+<td title="Level">INFO</td>
+<td title="com.citibank.enroll.customers.controller.EnrollmentController category">com.citibank.enroll.customers.controller.EnrollmentController</td>
+<td>EnrollmentController.java:61</td>
+<td title="Message">Entered into Resouce Layer :: EnrollmentResourceReq(clientContext=ClientContext(clientId=C-101, channelId=mbile, requestid=null, msgTimeStamp=Fri Jul 24 20:15:59 IST 2020), custInfo=CustmerInfo(mobileNo=[9981886715, 7987037711], email=prafullsahu2217@gmail.com, cardNo=6104001500002436, cvvNo=185, expDate=03-25, nameOnCard=Prafull Kuamr), serviceDetails=com.citibank.enroll.customers.model.ServiceDetails@256695f5)</td>
+</tr>
+
+<tr>
+<td>7</td>
+<td title="http-nio-9999-exec-2 thread">http-nio-9999-exec-2</td>
+<td title="Level">INFO</td>
+<td title="com.citibank.enroll.customers.service.impl.EnrollmentProcessImpl category">com.citibank.enroll.customers.service.impl.EnrollmentProcessImpl</td>
+<td>EnrollmentProcessImpl.java:35</td>
+<td title="Message">Enter into Process  :: EnrollmentProcessReq(clientId=C-101, channelId=mbile, mobileNo=[9981886715, 7987037711], email=prafullsahu2217@gmail.com, cardNo=6104001500002436, cvvNo=185, expDate=03-25, nameOnCard=Prafull Kuamr)</td>
+</tr>
+
+<tr>
+<td>8</td>
+<td title="http-nio-9999-exec-2 thread">http-nio-9999-exec-2</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.citibank.enroll.customers.service.impl.EnrollmentProcessImpl category">com.citibank.enroll.customers.service.impl.EnrollmentProcessImpl</td>
+<td>EnrollmentProcessImpl.java:38</td>
+<td title="Message">EnrollmentProcessImpl Request </td>
+</tr>
+
+<tr>
+<td>9</td>
+<td title="http-nio-9999-exec-2 thread">http-nio-9999-exec-2</td>
+<td title="Level">INFO</td>
+<td title="com.citibank.enroll.customers.svcclient.impl.CardverifyServicClientImpl category">com.citibank.enroll.customers.svcclient.impl.CardverifyServicClientImpl</td>
+<td>CardverifyServicClientImpl.java:16</td>
+<td title="Message">Entered into Card Verify service CardverifyServicClientReq(cardNo=6104001500002436, cvvNo=185, expDate=185, nameOnCard=Prafull Kuamr)</td>
+</tr>
+
+<tr>
+<td>9</td>
+<td title="http-nio-9999-exec-2 thread">http-nio-9999-exec-2</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.citibank.enroll.customers.svcclient.impl.CardverifyServicClientImpl category">com.citibank.enroll.customers.svcclient.impl.CardverifyServicClientImpl</td>
+<td>CardverifyServicClientImpl.java:17</td>
+<td title="Message">CardverifyServicClientImpl  Request </td>
+</tr>
+
+<tr>
+<td>10</td>
+<td title="http-nio-9999-exec-2 thread">http-nio-9999-exec-2</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.citibank.enroll.customers.svcclient.impl.CardverifyServicClientImpl category">com.citibank.enroll.customers.svcclient.impl.CardverifyServicClientImpl</td>
+<td>CardverifyServicClientImpl.java:25</td>
+<td title="Message">CardverifyServicClientImpl  Exit</td>
+</tr>
+
+<tr>
+<td>11</td>
+<td title="http-nio-9999-exec-2 thread">http-nio-9999-exec-2</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.citibank.enroll.customers.dao.impl.EnrollmentDAOImpl category">com.citibank.enroll.customers.dao.impl.EnrollmentDAOImpl</td>
+<td>EnrollmentDAOImpl.java:29</td>
+<td title="Message">Entered into EnrollmentDAOImpl</td>
+</tr>
+
+<tr>
+<td>11</td>
+<td title="http-nio-9999-exec-2 thread">http-nio-9999-exec-2</td>
+<td title="Level">INFO</td>
+<td title="com.citibank.enroll.customers.dao.impl.EnrollmentDAOImpl category">com.citibank.enroll.customers.dao.impl.EnrollmentDAOImpl</td>
+<td>EnrollmentDAOImpl.java:30</td>
+<td title="Message">EnrollmentDAOImpl  RequestEnrollmentDAOReq(clientId=mbile, channelId=mbile, mobileNo=[9981886715, 7987037711], email=prafullsahu2217@gmail.com, cardNo=6104001500002436, cvvNo=185, expDate=03-25, nameOnCard=Prafull Kuamr)</td>
+</tr>
+
+<tr>
+<td>252000</td>
+<td title="http-nio-9999-exec-2 thread">http-nio-9999-exec-2</td>
+<td title="Level">INFO</td>
+<td title="com.citibank.enroll.customers.controller.EnrollmentController category">com.citibank.enroll.customers.controller.EnrollmentController</td>
+<td>EnrollmentController.java:61</td>
+<td title="Message">Entered into Resouce Layer :: EnrollmentResourceReq(clientContext=ClientContext(clientId=C-101, channelId=mbile, requestid=null, msgTimeStamp=Fri Jul 24 20:15:59 IST 2020), custInfo=CustmerInfo(mobileNo=[9981886715, 7987037711], email=prafullsahu2217@gmail.com, cardNo=6104001500002436, cvvNo=185, expDate=03-25, nameOnCard=Prafull Kuamr), serviceDetails=com.citibank.enroll.customers.model.ServiceDetails@722ef2bd)</td>
+</tr>
+
+<tr>
+<td>252001</td>
+<td title="http-nio-9999-exec-2 thread">http-nio-9999-exec-2</td>
+<td title="Level">INFO</td>
+<td title="com.citibank.enroll.customers.service.impl.EnrollmentProcessImpl category">com.citibank.enroll.customers.service.impl.EnrollmentProcessImpl</td>
+<td>EnrollmentProcessImpl.java:35</td>
+<td title="Message">Enter into Process  :: EnrollmentProcessReq(clientId=C-101, channelId=mbile, mobileNo=[9981886715, 7987037711], email=prafullsahu2217@gmail.com, cardNo=6104001500002436, cvvNo=185, expDate=03-25, nameOnCard=Prafull Kuamr)</td>
+</tr>
+
+<tr>
+<td>252001</td>
+<td title="http-nio-9999-exec-2 thread">http-nio-9999-exec-2</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.citibank.enroll.customers.service.impl.EnrollmentProcessImpl category">com.citibank.enroll.customers.service.impl.EnrollmentProcessImpl</td>
+<td>EnrollmentProcessImpl.java:38</td>
+<td title="Message">EnrollmentProcessImpl Request </td>
+</tr>
+
+<tr>
+<td>252002</td>
+<td title="http-nio-9999-exec-2 thread">http-nio-9999-exec-2</td>
+<td title="Level">INFO</td>
+<td title="com.citibank.enroll.customers.svcclient.impl.CardverifyServicClientImpl category">com.citibank.enroll.customers.svcclient.impl.CardverifyServicClientImpl</td>
+<td>CardverifyServicClientImpl.java:16</td>
+<td title="Message">Entered into Card Verify service CardverifyServicClientReq(cardNo=6104001500002436, cvvNo=185, expDate=185, nameOnCard=Prafull Kuamr)</td>
+</tr>
+
+<tr>
+<td>252002</td>
+<td title="http-nio-9999-exec-2 thread">http-nio-9999-exec-2</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.citibank.enroll.customers.svcclient.impl.CardverifyServicClientImpl category">com.citibank.enroll.customers.svcclient.impl.CardverifyServicClientImpl</td>
+<td>CardverifyServicClientImpl.java:17</td>
+<td title="Message">CardverifyServicClientImpl  Request </td>
+</tr>
+
+<tr>
+<td>252003</td>
+<td title="http-nio-9999-exec-2 thread">http-nio-9999-exec-2</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.citibank.enroll.customers.svcclient.impl.CardverifyServicClientImpl category">com.citibank.enroll.customers.svcclient.impl.CardverifyServicClientImpl</td>
+<td>CardverifyServicClientImpl.java:25</td>
+<td title="Message">CardverifyServicClientImpl  Exit</td>
+</tr>
+
+<tr>
+<td>252003</td>
+<td title="http-nio-9999-exec-2 thread">http-nio-9999-exec-2</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.citibank.enroll.customers.dao.impl.EnrollmentDAOImpl category">com.citibank.enroll.customers.dao.impl.EnrollmentDAOImpl</td>
+<td>EnrollmentDAOImpl.java:29</td>
+<td title="Message">Entered into EnrollmentDAOImpl</td>
+</tr>
+
+<tr>
+<td>252003</td>
+<td title="http-nio-9999-exec-2 thread">http-nio-9999-exec-2</td>
+<td title="Level">INFO</td>
+<td title="com.citibank.enroll.customers.dao.impl.EnrollmentDAOImpl category">com.citibank.enroll.customers.dao.impl.EnrollmentDAOImpl</td>
+<td>EnrollmentDAOImpl.java:30</td>
+<td title="Message">EnrollmentDAOImpl  RequestEnrollmentDAOReq(clientId=mbile, channelId=mbile, mobileNo=[9981886715, 7987037711], email=prafullsahu2217@gmail.com, cardNo=6104001500002436, cvvNo=185, expDate=03-25, nameOnCard=Prafull Kuamr)</td>
+</tr>
+
+<tr>
+<td>608452</td>
+<td title="http-nio-9999-exec-2 thread">http-nio-9999-exec-2</td>
+<td title="Level">INFO</td>
+<td title="com.citibank.enroll.customers.controller.EnrollmentController category">com.citibank.enroll.customers.controller.EnrollmentController</td>
+<td>EnrollmentController.java:61</td>
+<td title="Message">Entered into Resouce Layer :: EnrollmentResourceReq(clientContext=ClientContext(clientId=C-101, channelId=mbile, requestid=null, msgTimeStamp=Fri Jul 24 20:15:59 IST 2020), custInfo=CustmerInfo(mobileNo=[9981886715, 7987037711], email=prafullsahu2217@gmail.com, cardNo=6104001500002436, cvvNo=185, expDate=03-25, nameOnCard=Prafull Kuamr), serviceDetails=com.citibank.enroll.customers.model.ServiceDetails@57bbc2b4)</td>
+</tr>
+
+<tr>
+<td>608454</td>
+<td title="http-nio-9999-exec-2 thread">http-nio-9999-exec-2</td>
+<td title="Level">INFO</td>
+<td title="com.citibank.enroll.customers.service.impl.EnrollmentProcessImpl category">com.citibank.enroll.customers.service.impl.EnrollmentProcessImpl</td>
+<td>EnrollmentProcessImpl.java:35</td>
+<td title="Message">Enter into Process  :: EnrollmentProcessReq(clientId=C-101, channelId=mbile, mobileNo=[9981886715, 7987037711], email=prafullsahu2217@gmail.com, cardNo=6104001500002436, cvvNo=185, expDate=03-25, nameOnCard=Prafull Kuamr)</td>
+</tr>
+
+<tr>
+<td>608454</td>
+<td title="http-nio-9999-exec-2 thread">http-nio-9999-exec-2</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.citibank.enroll.customers.service.impl.EnrollmentProcessImpl category">com.citibank.enroll.customers.service.impl.EnrollmentProcessImpl</td>
+<td>EnrollmentProcessImpl.java:38</td>
+<td title="Message">EnrollmentProcessImpl Request </td>
+</tr>
+
+<tr>
+<td>608455</td>
+<td title="http-nio-9999-exec-2 thread">http-nio-9999-exec-2</td>
+<td title="Level">INFO</td>
+<td title="com.citibank.enroll.customers.svcclient.impl.CardverifyServicClientImpl category">com.citibank.enroll.customers.svcclient.impl.CardverifyServicClientImpl</td>
+<td>CardverifyServicClientImpl.java:16</td>
+<td title="Message">Entered into Card Verify service CardverifyServicClientReq(cardNo=6104001500002436, cvvNo=185, expDate=185, nameOnCard=Prafull Kuamr)</td>
+</tr>
+
+<tr>
+<td>608455</td>
+<td title="http-nio-9999-exec-2 thread">http-nio-9999-exec-2</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.citibank.enroll.customers.svcclient.impl.CardverifyServicClientImpl category">com.citibank.enroll.customers.svcclient.impl.CardverifyServicClientImpl</td>
+<td>CardverifyServicClientImpl.java:17</td>
+<td title="Message">CardverifyServicClientImpl  Request </td>
+</tr>
+
+<tr>
+<td>608455</td>
+<td title="http-nio-9999-exec-2 thread">http-nio-9999-exec-2</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.citibank.enroll.customers.svcclient.impl.CardverifyServicClientImpl category">com.citibank.enroll.customers.svcclient.impl.CardverifyServicClientImpl</td>
+<td>CardverifyServicClientImpl.java:25</td>
+<td title="Message">CardverifyServicClientImpl  Exit</td>
+</tr>
+
+<tr>
+<td>608456</td>
+<td title="http-nio-9999-exec-2 thread">http-nio-9999-exec-2</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.citibank.enroll.customers.dao.impl.EnrollmentDAOImpl category">com.citibank.enroll.customers.dao.impl.EnrollmentDAOImpl</td>
+<td>EnrollmentDAOImpl.java:29</td>
+<td title="Message">Entered into EnrollmentDAOImpl</td>
+</tr>
+
+<tr>
+<td>608456</td>
+<td title="http-nio-9999-exec-2 thread">http-nio-9999-exec-2</td>
+<td title="Level">INFO</td>
+<td title="com.citibank.enroll.customers.dao.impl.EnrollmentDAOImpl category">com.citibank.enroll.customers.dao.impl.EnrollmentDAOImpl</td>
+<td>EnrollmentDAOImpl.java:30</td>
+<td title="Message">EnrollmentDAOImpl  RequestEnrollmentDAOReq(clientId=mbile, channelId=mbile, mobileNo=[9981886715, 7987037711], email=prafullsahu2217@gmail.com, cardNo=6104001500002436, cvvNo=185, expDate=03-25, nameOnCard=Prafull Kuamr)</td>
+</tr>
+
+<tr>
+<td>774062</td>
+<td title="http-nio-9999-exec-2 thread">http-nio-9999-exec-2</td>
+<td title="Level">INFO</td>
+<td title="com.citibank.enroll.customers.controller.EnrollmentController category">com.citibank.enroll.customers.controller.EnrollmentController</td>
+<td>EnrollmentController.java:61</td>
+<td title="Message">Entered into Resouce Layer :: EnrollmentResourceReq(clientContext=ClientContext(clientId=C-101, channelId=mbile, requestid=null, msgTimeStamp=Fri Jul 24 20:15:59 IST 2020), custInfo=CustmerInfo(mobileNo=[9981886715, 7987037711], email=prafullsahu2217@gmail.com, cardNo=6104001500002436, cvvNo=185, expDate=03-25, nameOnCard=Prafull Kuamr), serviceDetails=com.citibank.enroll.customers.model.ServiceDetails@4197602b)</td>
+</tr>
+
+<tr>
+<td>774064</td>
+<td title="http-nio-9999-exec-2 thread">http-nio-9999-exec-2</td>
+<td title="Level">INFO</td>
+<td title="com.citibank.enroll.customers.service.impl.EnrollmentProcessImpl category">com.citibank.enroll.customers.service.impl.EnrollmentProcessImpl</td>
+<td>EnrollmentProcessImpl.java:35</td>
+<td title="Message">Enter into Process  :: EnrollmentProcessReq(clientId=C-101, channelId=mbile, mobileNo=[9981886715, 7987037711], email=prafullsahu2217@gmail.com, cardNo=6104001500002436, cvvNo=185, expDate=03-25, nameOnCard=Prafull Kuamr)</td>
+</tr>
+
+<tr>
+<td>774064</td>
+<td title="http-nio-9999-exec-2 thread">http-nio-9999-exec-2</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.citibank.enroll.customers.service.impl.EnrollmentProcessImpl category">com.citibank.enroll.customers.service.impl.EnrollmentProcessImpl</td>
+<td>EnrollmentProcessImpl.java:38</td>
+<td title="Message">EnrollmentProcessImpl Request </td>
+</tr>
+
+<tr>
+<td>774065</td>
+<td title="http-nio-9999-exec-2 thread">http-nio-9999-exec-2</td>
+<td title="Level">INFO</td>
+<td title="com.citibank.enroll.customers.svcclient.impl.CardverifyServicClientImpl category">com.citibank.enroll.customers.svcclient.impl.CardverifyServicClientImpl</td>
+<td>CardverifyServicClientImpl.java:16</td>
+<td title="Message">Entered into Card Verify service CardverifyServicClientReq(cardNo=6104001500002436, cvvNo=185, expDate=185, nameOnCard=Prafull Kuamr)</td>
+</tr>
+
+<tr>
+<td>774065</td>
+<td title="http-nio-9999-exec-2 thread">http-nio-9999-exec-2</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.citibank.enroll.customers.svcclient.impl.CardverifyServicClientImpl category">com.citibank.enroll.customers.svcclient.impl.CardverifyServicClientImpl</td>
+<td>CardverifyServicClientImpl.java:17</td>
+<td title="Message">CardverifyServicClientImpl  Request </td>
+</tr>
+
+<tr>
+<td>774066</td>
+<td title="http-nio-9999-exec-2 thread">http-nio-9999-exec-2</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.citibank.enroll.customers.svcclient.impl.CardverifyServicClientImpl category">com.citibank.enroll.customers.svcclient.impl.CardverifyServicClientImpl</td>
+<td>CardverifyServicClientImpl.java:25</td>
+<td title="Message">CardverifyServicClientImpl  Exit</td>
+</tr>
+
+<tr>
+<td>774066</td>
+<td title="http-nio-9999-exec-2 thread">http-nio-9999-exec-2</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.citibank.enroll.customers.dao.impl.EnrollmentDAOImpl category">com.citibank.enroll.customers.dao.impl.EnrollmentDAOImpl</td>
+<td>EnrollmentDAOImpl.java:29</td>
+<td title="Message">Entered into EnrollmentDAOImpl</td>
+</tr>
+
+<tr>
+<td>774067</td>
+<td title="http-nio-9999-exec-2 thread">http-nio-9999-exec-2</td>
+<td title="Level">INFO</td>
+<td title="com.citibank.enroll.customers.dao.impl.EnrollmentDAOImpl category">com.citibank.enroll.customers.dao.impl.EnrollmentDAOImpl</td>
+<td>EnrollmentDAOImpl.java:30</td>
+<td title="Message">EnrollmentDAOImpl  RequestEnrollmentDAOReq(clientId=mbile, channelId=mbile, mobileNo=[9981886715, 7987037711], email=prafullsahu2217@gmail.com, cardNo=6104001500002436, cvvNo=185, expDate=03-25, nameOnCard=Prafull Kuamr)</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>HTML Layout Example</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Thu Sep 03 12:54:16 IST 2020<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="http-nio-9999-exec-2 thread">http-nio-9999-exec-2</td>
+<td title="Level">INFO</td>
+<td title="com.citibank.enroll.customers.controller.EnrollmentController category">com.citibank.enroll.customers.controller.EnrollmentController</td>
+<td>EnrollmentController.java:61</td>
+<td title="Message">Entered into Resouce Layer :: EnrollmentResourceReq(clientContext=ClientContext(clientId=C-101, channelId=mbile, requestid=null, msgTimeStamp=Fri Jul 24 20:15:59 IST 2020), custInfo=CustmerInfo(mobileNo=[9981886715, 7987037711], email=prafullsahu2217@gmail.com, cardNo=6104001500002436, cvvNo=185, expDate=03-25, nameOnCard=Prafull Kuamr), serviceDetails=com.citibank.enroll.customers.model.ServiceDetails@7881dbfe)</td>
+</tr>
+
+<tr>
+<td>6</td>
+<td title="http-nio-9999-exec-2 thread">http-nio-9999-exec-2</td>
+<td title="Level">INFO</td>
+<td title="com.citibank.enroll.customers.service.impl.EnrollmentProcessImpl category">com.citibank.enroll.customers.service.impl.EnrollmentProcessImpl</td>
+<td>EnrollmentProcessImpl.java:35</td>
+<td title="Message">Enter into Process  :: EnrollmentProcessReq(clientId=C-101, channelId=mbile, mobileNo=[9981886715, 7987037711], email=prafullsahu2217@gmail.com, cardNo=6104001500002436, cvvNo=185, expDate=03-25, nameOnCard=Prafull Kuamr)</td>
+</tr>
+
+<tr>
+<td>7</td>
+<td title="http-nio-9999-exec-2 thread">http-nio-9999-exec-2</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.citibank.enroll.customers.service.impl.EnrollmentProcessImpl category">com.citibank.enroll.customers.service.impl.EnrollmentProcessImpl</td>
+<td>EnrollmentProcessImpl.java:38</td>
+<td title="Message">EnrollmentProcessImpl Request </td>
+</tr>
+
+<tr>
+<td>7</td>
+<td title="http-nio-9999-exec-2 thread">http-nio-9999-exec-2</td>
+<td title="Level">INFO</td>
+<td title="com.citibank.enroll.customers.svcclient.impl.CardverifyServicClientImpl category">com.citibank.enroll.customers.svcclient.impl.CardverifyServicClientImpl</td>
+<td>CardverifyServicClientImpl.java:16</td>
+<td title="Message">Entered into Card Verify service CardverifyServicClientReq(cardNo=6104001500002436, cvvNo=185, expDate=185, nameOnCard=Prafull Kuamr)</td>
+</tr>
+
+<tr>
+<td>8</td>
+<td title="http-nio-9999-exec-2 thread">http-nio-9999-exec-2</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.citibank.enroll.customers.svcclient.impl.CardverifyServicClientImpl category">com.citibank.enroll.customers.svcclient.impl.CardverifyServicClientImpl</td>
+<td>CardverifyServicClientImpl.java:17</td>
+<td title="Message">CardverifyServicClientImpl  Request </td>
+</tr>
+
+<tr>
+<td>8</td>
+<td title="http-nio-9999-exec-2 thread">http-nio-9999-exec-2</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.citibank.enroll.customers.svcclient.impl.CardverifyServicClientImpl category">com.citibank.enroll.customers.svcclient.impl.CardverifyServicClientImpl</td>
+<td>CardverifyServicClientImpl.java:25</td>
+<td title="Message">CardverifyServicClientImpl  Exit</td>
+</tr>
+
+<tr>
+<td>9</td>
+<td title="http-nio-9999-exec-2 thread">http-nio-9999-exec-2</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.citibank.enroll.customers.dao.impl.EnrollmentDAOImpl category">com.citibank.enroll.customers.dao.impl.EnrollmentDAOImpl</td>
+<td>EnrollmentDAOImpl.java:29</td>
+<td title="Message">Entered into EnrollmentDAOImpl</td>
+</tr>
+
+<tr>
+<td>10</td>
+<td title="http-nio-9999-exec-2 thread">http-nio-9999-exec-2</td>
+<td title="Level">INFO</td>
+<td title="com.citibank.enroll.customers.dao.impl.EnrollmentDAOImpl category">com.citibank.enroll.customers.dao.impl.EnrollmentDAOImpl</td>
+<td>EnrollmentDAOImpl.java:30</td>
+<td title="Message">EnrollmentDAOImpl  RequestEnrollmentDAOReq(clientId=mbile, channelId=mbile, mobileNo=[9981886715, 7987037711], email=prafullsahu2217@gmail.com, cardNo=6104001500002436, cvvNo=185, expDate=03-25, nameOnCard=Prafull Kuamr)</td>
+</tr>
+
+<tr>
+<td>278095</td>
+<td title="http-nio-9999-exec-2 thread">http-nio-9999-exec-2</td>
+<td title="Level">INFO</td>
+<td title="com.citibank.enroll.customers.controller.EnrollmentController category">com.citibank.enroll.customers.controller.EnrollmentController</td>
+<td>EnrollmentController.java:61</td>
+<td title="Message">Entered into Resouce Layer :: EnrollmentResourceReq(clientContext=ClientContext(clientId=C-101, channelId=mbile, requestid=null, msgTimeStamp=Fri Jul 24 20:15:59 IST 2020), custInfo=CustmerInfo(mobileNo=[9981886715, 7987037711], email=prafullsahu2217@gmail.com, cardNo=6104001500002436, cvvNo=185, expDate=03-25, nameOnCard=Prafull Kuamr), serviceDetails=com.citibank.enroll.customers.model.ServiceDetails@2e3d757f)</td>
+</tr>
+
+<tr>
+<td>278097</td>
+<td title="http-nio-9999-exec-2 thread">http-nio-9999-exec-2</td>
+<td title="Level">INFO</td>
+<td title="com.citibank.enroll.customers.service.impl.EnrollmentProcessImpl category">com.citibank.enroll.customers.service.impl.EnrollmentProcessImpl</td>
+<td>EnrollmentProcessImpl.java:35</td>
+<td title="Message">Enter into Process  :: EnrollmentProcessReq(clientId=C-101, channelId=mbile, mobileNo=[9981886715, 7987037711], email=prafullsahu2217@gmail.com, cardNo=6104001500002436, cvvNo=185, expDate=03-25, nameOnCard=Prafull Kuamr)</td>
+</tr>
+
+<tr>
+<td>278098</td>
+<td title="http-nio-9999-exec-2 thread">http-nio-9999-exec-2</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.citibank.enroll.customers.service.impl.EnrollmentProcessImpl category">com.citibank.enroll.customers.service.impl.EnrollmentProcessImpl</td>
+<td>EnrollmentProcessImpl.java:38</td>
+<td title="Message">EnrollmentProcessImpl Request </td>
+</tr>
+
+<tr>
+<td>278099</td>
+<td title="http-nio-9999-exec-2 thread">http-nio-9999-exec-2</td>
+<td title="Level">INFO</td>
+<td title="com.citibank.enroll.customers.svcclient.impl.CardverifyServicClientImpl category">com.citibank.enroll.customers.svcclient.impl.CardverifyServicClientImpl</td>
+<td>CardverifyServicClientImpl.java:16</td>
+<td title="Message">Entered into Card Verify service CardverifyServicClientReq(cardNo=6104001500002436, cvvNo=185, expDate=185, nameOnCard=Prafull Kuamr)</td>
+</tr>
+
+<tr>
+<td>278099</td>
+<td title="http-nio-9999-exec-2 thread">http-nio-9999-exec-2</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.citibank.enroll.customers.svcclient.impl.CardverifyServicClientImpl category">com.citibank.enroll.customers.svcclient.impl.CardverifyServicClientImpl</td>
+<td>CardverifyServicClientImpl.java:17</td>
+<td title="Message">CardverifyServicClientImpl  Request </td>
+</tr>
+
+<tr>
+<td>278100</td>
+<td title="http-nio-9999-exec-2 thread">http-nio-9999-exec-2</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.citibank.enroll.customers.svcclient.impl.CardverifyServicClientImpl category">com.citibank.enroll.customers.svcclient.impl.CardverifyServicClientImpl</td>
+<td>CardverifyServicClientImpl.java:25</td>
+<td title="Message">CardverifyServicClientImpl  Exit</td>
+</tr>
+
+<tr>
+<td>278100</td>
+<td title="http-nio-9999-exec-2 thread">http-nio-9999-exec-2</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.citibank.enroll.customers.dao.impl.EnrollmentDAOImpl category">com.citibank.enroll.customers.dao.impl.EnrollmentDAOImpl</td>
+<td>EnrollmentDAOImpl.java:29</td>
+<td title="Message">Entered into EnrollmentDAOImpl</td>
+</tr>
+
+<tr>
+<td>278101</td>
+<td title="http-nio-9999-exec-2 thread">http-nio-9999-exec-2</td>
+<td title="Level">INFO</td>
+<td title="com.citibank.enroll.customers.dao.impl.EnrollmentDAOImpl category">com.citibank.enroll.customers.dao.impl.EnrollmentDAOImpl</td>
+<td>EnrollmentDAOImpl.java:30</td>
+<td title="Message">EnrollmentDAOImpl  RequestEnrollmentDAOReq(clientId=mbile, channelId=mbile, mobileNo=[9981886715, 7987037711], email=prafullsahu2217@gmail.com, cardNo=6104001500002436, cvvNo=185, expDate=03-25, nameOnCard=Prafull Kuamr)</td>
+</tr>
+
+<tr>
+<td>565550</td>
+<td title="http-nio-9999-exec-2 thread">http-nio-9999-exec-2</td>
+<td title="Level">INFO</td>
+<td title="com.citibank.enroll.customers.controller.EnrollmentController category">com.citibank.enroll.customers.controller.EnrollmentController</td>
+<td>EnrollmentController.java:61</td>
+<td title="Message">Entered into Resouce Layer :: EnrollmentResourceReq(clientContext=ClientContext(clientId=C-101, channelId=mbile, requestid=null, msgTimeStamp=Fri Jul 24 20:15:59 IST 2020), custInfo=CustmerInfo(mobileNo=[9981886715, 7987037711], email=prafullsahu2217@gmail.com, cardNo=6104001500002436, cvvNo=185, expDate=03-25, nameOnCard=Prafull Kuamr), serviceDetails=com.citibank.enroll.customers.model.ServiceDetails@5f4dd444)</td>
+</tr>
+
+<tr>
+<td>565551</td>
+<td title="http-nio-9999-exec-2 thread">http-nio-9999-exec-2</td>
+<td title="Level">INFO</td>
+<td title="com.citibank.enroll.customers.service.impl.EnrollmentProcessImpl category">com.citibank.enroll.customers.service.impl.EnrollmentProcessImpl</td>
+<td>EnrollmentProcessImpl.java:35</td>
+<td title="Message">Enter into Process  :: EnrollmentProcessReq(clientId=C-101, channelId=mbile, mobileNo=[9981886715, 7987037711], email=prafullsahu2217@gmail.com, cardNo=6104001500002436, cvvNo=185, expDate=03-25, nameOnCard=Prafull Kuamr)</td>
+</tr>
+
+<tr>
+<td>565552</td>
+<td title="http-nio-9999-exec-2 thread">http-nio-9999-exec-2</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.citibank.enroll.customers.service.impl.EnrollmentProcessImpl category">com.citibank.enroll.customers.service.impl.EnrollmentProcessImpl</td>
+<td>EnrollmentProcessImpl.java:38</td>
+<td title="Message">EnrollmentProcessImpl Request </td>
+</tr>
+
+<tr>
+<td>565552</td>
+<td title="http-nio-9999-exec-2 thread">http-nio-9999-exec-2</td>
+<td title="Level">INFO</td>
+<td title="com.citibank.enroll.customers.svcclient.impl.CardverifyServicClientImpl category">com.citibank.enroll.customers.svcclient.impl.CardverifyServicClientImpl</td>
+<td>CardverifyServicClientImpl.java:16</td>
+<td title="Message">Entered into Card Verify service CardverifyServicClientReq(cardNo=6104001500002436, cvvNo=185, expDate=185, nameOnCard=Prafull Kuamr)</td>
+</tr>
+
+<tr>
+<td>565553</td>
+<td title="http-nio-9999-exec-2 thread">http-nio-9999-exec-2</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.citibank.enroll.customers.svcclient.impl.CardverifyServicClientImpl category">com.citibank.enroll.customers.svcclient.impl.CardverifyServicClientImpl</td>
+<td>CardverifyServicClientImpl.java:17</td>
+<td title="Message">CardverifyServicClientImpl  Request </td>
+</tr>
+
+<tr>
+<td>565554</td>
+<td title="http-nio-9999-exec-2 thread">http-nio-9999-exec-2</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.citibank.enroll.customers.svcclient.impl.CardverifyServicClientImpl category">com.citibank.enroll.customers.svcclient.impl.CardverifyServicClientImpl</td>
+<td>CardverifyServicClientImpl.java:25</td>
+<td title="Message">CardverifyServicClientImpl  Exit</td>
+</tr>
+
+<tr>
+<td>565554</td>
+<td title="http-nio-9999-exec-2 thread">http-nio-9999-exec-2</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.citibank.enroll.customers.dao.impl.EnrollmentDAOImpl category">com.citibank.enroll.customers.dao.impl.EnrollmentDAOImpl</td>
+<td>EnrollmentDAOImpl.java:29</td>
+<td title="Message">Entered into EnrollmentDAOImpl</td>
+</tr>
+
+<tr>
+<td>565555</td>
+<td title="http-nio-9999-exec-2 thread">http-nio-9999-exec-2</td>
+<td title="Level">INFO</td>
+<td title="com.citibank.enroll.customers.dao.impl.EnrollmentDAOImpl category">com.citibank.enroll.customers.dao.impl.EnrollmentDAOImpl</td>
+<td>EnrollmentDAOImpl.java:30</td>
+<td title="Message">EnrollmentDAOImpl  RequestEnrollmentDAOReq(clientId=mbile, channelId=mbile, mobileNo=[9981886715, 7987037711], email=prafullsahu2217@gmail.com, cardNo=6104001500002436, cvvNo=185, expDate=03-25, nameOnCard=Prafull Kuamr)</td>
+</tr>
+
+<tr>
+<td>705472</td>
+<td title="http-nio-9999-exec-2 thread">http-nio-9999-exec-2</td>
+<td title="Level">INFO</td>
+<td title="com.citibank.enroll.customers.controller.EnrollmentController category">com.citibank.enroll.customers.controller.EnrollmentController</td>
+<td>EnrollmentController.java:61</td>
+<td title="Message">Entered into Resouce Layer :: EnrollmentResourceReq(clientContext=ClientContext(clientId=C-101, channelId=mbile, requestid=null, msgTimeStamp=Fri Jul 24 20:15:59 IST 2020), custInfo=CustmerInfo(mobileNo=[9981886715, 7987037711], email=prafullsahu2217@gmail.com, cardNo=6104001500002436, cvvNo=185, expDate=03-25, nameOnCard=Prafull Kuamr), serviceDetails=com.citibank.enroll.customers.model.ServiceDetails@5b56fb7c)</td>
+</tr>
+
+<tr>
+<td>705475</td>
+<td title="http-nio-9999-exec-2 thread">http-nio-9999-exec-2</td>
+<td title="Level">INFO</td>
+<td title="com.citibank.enroll.customers.service.impl.EnrollmentProcessImpl category">com.citibank.enroll.customers.service.impl.EnrollmentProcessImpl</td>
+<td>EnrollmentProcessImpl.java:35</td>
+<td title="Message">Enter into Process  :: EnrollmentProcessReq(clientId=C-101, channelId=mbile, mobileNo=[9981886715, 7987037711], email=prafullsahu2217@gmail.com, cardNo=6104001500002436, cvvNo=185, expDate=03-25, nameOnCard=Prafull Kuamr)</td>
+</tr>
+
+<tr>
+<td>705476</td>
+<td title="http-nio-9999-exec-2 thread">http-nio-9999-exec-2</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.citibank.enroll.customers.service.impl.EnrollmentProcessImpl category">com.citibank.enroll.customers.service.impl.EnrollmentProcessImpl</td>
+<td>EnrollmentProcessImpl.java:38</td>
+<td title="Message">EnrollmentProcessImpl Request </td>
+</tr>
+
+<tr>
+<td>705477</td>
+<td title="http-nio-9999-exec-2 thread">http-nio-9999-exec-2</td>
+<td title="Level">INFO</td>
+<td title="com.citibank.enroll.customers.svcclient.impl.CardverifyServicClientImpl category">com.citibank.enroll.customers.svcclient.impl.CardverifyServicClientImpl</td>
+<td>CardverifyServicClientImpl.java:16</td>
+<td title="Message">Entered into Card Verify service CardverifyServicClientReq(cardNo=6104001500002436, cvvNo=185, expDate=185, nameOnCard=Prafull Kuamr)</td>
+</tr>
+
+<tr>
+<td>705478</td>
+<td title="http-nio-9999-exec-2 thread">http-nio-9999-exec-2</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.citibank.enroll.customers.svcclient.impl.CardverifyServicClientImpl category">com.citibank.enroll.customers.svcclient.impl.CardverifyServicClientImpl</td>
+<td>CardverifyServicClientImpl.java:17</td>
+<td title="Message">CardverifyServicClientImpl  Request </td>
+</tr>
+
+<tr>
+<td>705479</td>
+<td title="http-nio-9999-exec-2 thread">http-nio-9999-exec-2</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.citibank.enroll.customers.svcclient.impl.CardverifyServicClientImpl category">com.citibank.enroll.customers.svcclient.impl.CardverifyServicClientImpl</td>
+<td>CardverifyServicClientImpl.java:25</td>
+<td title="Message">CardverifyServicClientImpl  Exit</td>
+</tr>
+
+<tr>
+<td>705479</td>
+<td title="http-nio-9999-exec-2 thread">http-nio-9999-exec-2</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.citibank.enroll.customers.dao.impl.EnrollmentDAOImpl category">com.citibank.enroll.customers.dao.impl.EnrollmentDAOImpl</td>
+<td>EnrollmentDAOImpl.java:29</td>
+<td title="Message">Entered into EnrollmentDAOImpl</td>
+</tr>
+
+<tr>
+<td>705480</td>
+<td title="http-nio-9999-exec-2 thread">http-nio-9999-exec-2</td>
+<td title="Level">INFO</td>
+<td title="com.citibank.enroll.customers.dao.impl.EnrollmentDAOImpl category">com.citibank.enroll.customers.dao.impl.EnrollmentDAOImpl</td>
+<td>EnrollmentDAOImpl.java:30</td>
+<td title="Message">EnrollmentDAOImpl  RequestEnrollmentDAOReq(clientId=mbile, channelId=mbile, mobileNo=[9981886715, 7987037711], email=prafullsahu2217@gmail.com, cardNo=6104001500002436, cvvNo=185, expDate=03-25, nameOnCard=Prafull Kuamr)</td>
+</tr>
+
+<tr>
+<td>707667</td>
+<td title="http-nio-9999-exec-2 thread">http-nio-9999-exec-2</td>
+<td title="Level"><font color="#993300"><strong>WARN</strong></font></td>
+<td title="com.citibank.enroll.customers.dao.impl.EnrollmentDAOImpl category">com.citibank.enroll.customers.dao.impl.EnrollmentDAOImpl</td>
+<td>EnrollmentDAOImpl.java:85</td>
+<td title="Message">MessagingException</td>
+</tr>
+
+<tr>
+<td>707668</td>
+<td title="http-nio-9999-exec-2 thread">http-nio-9999-exec-2</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.citibank.enroll.customers.dao.impl.EnrollmentDAOImpl category">com.citibank.enroll.customers.dao.impl.EnrollmentDAOImpl</td>
+<td>EnrollmentDAOImpl.java:90</td>
+<td title="Message">EnrollmentDAOImpl  Exit</td>
+</tr>
+
+<tr>
+<td>707669</td>
+<td title="http-nio-9999-exec-2 thread">http-nio-9999-exec-2</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.citibank.enroll.customers.service.impl.EnrollmentProcessImpl category">com.citibank.enroll.customers.service.impl.EnrollmentProcessImpl</td>
+<td>EnrollmentProcessImpl.java:55</td>
+<td title="Message">Exit from Enrollment Process</td>
+</tr>
+
+<tr>
+<td>707670</td>
+<td title="http-nio-9999-exec-2 thread">http-nio-9999-exec-2</td>
+<td title="Level">INFO</td>
+<td title="com.citibank.enroll.customers.controller.EnrollmentController category">com.citibank.enroll.customers.controller.EnrollmentController</td>
+<td>EnrollmentController.java:97</td>
+<td title="Message">Exit From Resouce Layer :: EnrollmentResourceRes(status=StatusBlock(respCode=good, respMsg=good, status=delivered))</td>
+</tr>
+
+<tr>
+<td>1437175</td>
+<td title="http-nio-9999-exec-2 thread">http-nio-9999-exec-2</td>
+<td title="Level">INFO</td>
+<td title="com.citibank.enroll.customers.controller.EnrollmentController category">com.citibank.enroll.customers.controller.EnrollmentController</td>
+<td>EnrollmentController.java:61</td>
+<td title="Message">Entered into Resouce Layer :: EnrollmentResourceReq(clientContext=ClientContext(clientId=C-101, channelId=mbile, requestid=null, msgTimeStamp=Fri Jul 24 20:15:59 IST 2020), custInfo=CustmerInfo(mobileNo=[9981886715, 7987037711], email=prafullsahu2217@gmail.com, cardNo=6104001500002436, cvvNo=185, expDate=03-25, nameOnCard=Prafull Kuamr), serviceDetails=com.citibank.enroll.customers.model.ServiceDetails@720ee213)</td>
+</tr>
+
+<tr>
+<td>1437176</td>
+<td title="http-nio-9999-exec-2 thread">http-nio-9999-exec-2</td>
+<td title="Level">INFO</td>
+<td title="com.citibank.enroll.customers.service.impl.EnrollmentProcessImpl category">com.citibank.enroll.customers.service.impl.EnrollmentProcessImpl</td>
+<td>EnrollmentProcessImpl.java:35</td>
+<td title="Message">Enter into Process  :: EnrollmentProcessReq(clientId=C-101, channelId=mbile, mobileNo=[9981886715, 7987037711], email=prafullsahu2217@gmail.com, cardNo=6104001500002436, cvvNo=185, expDate=03-25, nameOnCard=Prafull Kuamr)</td>
+</tr>
+
+<tr>
+<td>1437177</td>
+<td title="http-nio-9999-exec-2 thread">http-nio-9999-exec-2</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.citibank.enroll.customers.service.impl.EnrollmentProcessImpl category">com.citibank.enroll.customers.service.impl.EnrollmentProcessImpl</td>
+<td>EnrollmentProcessImpl.java:38</td>
+<td title="Message">EnrollmentProcessImpl Request </td>
+</tr>
+
+<tr>
+<td>1437177</td>
+<td title="http-nio-9999-exec-2 thread">http-nio-9999-exec-2</td>
+<td title="Level">INFO</td>
+<td title="com.citibank.enroll.customers.svcclient.impl.CardverifyServicClientImpl category">com.citibank.enroll.customers.svcclient.impl.CardverifyServicClientImpl</td>
+<td>CardverifyServicClientImpl.java:16</td>
+<td title="Message">Entered into Card Verify service CardverifyServicClientReq(cardNo=6104001500002436, cvvNo=185, expDate=185, nameOnCard=Prafull Kuamr)</td>
+</tr>
+
+<tr>
+<td>1437177</td>
+<td title="http-nio-9999-exec-2 thread">http-nio-9999-exec-2</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.citibank.enroll.customers.svcclient.impl.CardverifyServicClientImpl category">com.citibank.enroll.customers.svcclient.impl.CardverifyServicClientImpl</td>
+<td>CardverifyServicClientImpl.java:17</td>
+<td title="Message">CardverifyServicClientImpl  Request </td>
+</tr>
+
+<tr>
+<td>1437178</td>
+<td title="http-nio-9999-exec-2 thread">http-nio-9999-exec-2</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.citibank.enroll.customers.svcclient.impl.CardverifyServicClientImpl category">com.citibank.enroll.customers.svcclient.impl.CardverifyServicClientImpl</td>
+<td>CardverifyServicClientImpl.java:25</td>
+<td title="Message">CardverifyServicClientImpl  Exit</td>
+</tr>
+
+<tr>
+<td>1519116</td>
+<td title="http-nio-9999-exec-2 thread">http-nio-9999-exec-2</td>
+<td title="Level">INFO</td>
+<td title="com.citibank.enroll.customers.controller.EnrollmentController category">com.citibank.enroll.customers.controller.EnrollmentController</td>
+<td>EnrollmentController.java:61</td>
+<td title="Message">Entered into Resouce Layer :: EnrollmentResourceReq(clientContext=ClientContext(clientId=C-101, channelId=mbile, requestid=null, msgTimeStamp=Fri Jul 24 20:15:59 IST 2020), custInfo=CustmerInfo(mobileNo=[9981886715, 7987037711], email=prafullsahu2217@gmail.com, cardNo=6104001500002436, cvvNo=185, expDate=03-25, nameOnCard=Prafull Kuamr), serviceDetails=com.citibank.enroll.customers.model.ServiceDetails@24d90b7b)</td>
+</tr>
+
+<tr>
+<td>1519118</td>
+<td title="http-nio-9999-exec-2 thread">http-nio-9999-exec-2</td>
+<td title="Level">INFO</td>
+<td title="com.citibank.enroll.customers.service.impl.EnrollmentProcessImpl category">com.citibank.enroll.customers.service.impl.EnrollmentProcessImpl</td>
+<td>EnrollmentProcessImpl.java:35</td>
+<td title="Message">Enter into Process  :: EnrollmentProcessReq(clientId=C-101, channelId=mbile, mobileNo=[9981886715, 7987037711], email=prafullsahu2217@gmail.com, cardNo=6104001500002436, cvvNo=185, expDate=03-25, nameOnCard=Prafull Kuamr)</td>
+</tr>
+
+<tr>
+<td>1519118</td>
+<td title="http-nio-9999-exec-2 thread">http-nio-9999-exec-2</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.citibank.enroll.customers.service.impl.EnrollmentProcessImpl category">com.citibank.enroll.customers.service.impl.EnrollmentProcessImpl</td>
+<td>EnrollmentProcessImpl.java:38</td>
+<td title="Message">EnrollmentProcessImpl Request </td>
+</tr>
+
+<tr>
+<td>1519119</td>
+<td title="http-nio-9999-exec-2 thread">http-nio-9999-exec-2</td>
+<td title="Level">INFO</td>
+<td title="com.citibank.enroll.customers.svcclient.impl.CardverifyServicClientImpl category">com.citibank.enroll.customers.svcclient.impl.CardverifyServicClientImpl</td>
+<td>CardverifyServicClientImpl.java:16</td>
+<td title="Message">Entered into Card Verify service CardverifyServicClientReq(cardNo=6104001500002436, cvvNo=185, expDate=185, nameOnCard=Prafull Kuamr)</td>
+</tr>
+
+<tr>
+<td>1519119</td>
+<td title="http-nio-9999-exec-2 thread">http-nio-9999-exec-2</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.citibank.enroll.customers.svcclient.impl.CardverifyServicClientImpl category">com.citibank.enroll.customers.svcclient.impl.CardverifyServicClientImpl</td>
+<td>CardverifyServicClientImpl.java:17</td>
+<td title="Message">CardverifyServicClientImpl  Request </td>
+</tr>
+
+<tr>
+<td>1519120</td>
+<td title="http-nio-9999-exec-2 thread">http-nio-9999-exec-2</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.citibank.enroll.customers.svcclient.impl.CardverifyServicClientImpl category">com.citibank.enroll.customers.svcclient.impl.CardverifyServicClientImpl</td>
+<td>CardverifyServicClientImpl.java:25</td>
+<td title="Message">CardverifyServicClientImpl  Exit</td>
+</tr>
+
+<tr>
+<td>1519120</td>
+<td title="http-nio-9999-exec-2 thread">http-nio-9999-exec-2</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.citibank.enroll.customers.dao.impl.EnrollmentDAOImpl category">com.citibank.enroll.customers.dao.impl.EnrollmentDAOImpl</td>
+<td>EnrollmentDAOImpl.java:31</td>
+<td title="Message">Entered into EnrollmentDAOImpl</td>
+</tr>
+
+<tr>
+<td>1519121</td>
+<td title="http-nio-9999-exec-2 thread">http-nio-9999-exec-2</td>
+<td title="Level">INFO</td>
+<td title="com.citibank.enroll.customers.dao.impl.EnrollmentDAOImpl category">com.citibank.enroll.customers.dao.impl.EnrollmentDAOImpl</td>
+<td>EnrollmentDAOImpl.java:32</td>
+<td title="Message">EnrollmentDAOImpl  RequestEnrollmentDAOReq(clientId=mbile, channelId=mbile, mobileNo=[9981886715, 7987037711], email=prafullsahu2217@gmail.com, cardNo=6104001500002436, cvvNo=185, expDate=03-25, nameOnCard=Prafull Kuamr)</td>
+</tr>
+
+<tr>
+<td>1519127</td>
+<td title="http-nio-9999-exec-2 thread">http-nio-9999-exec-2</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.citibank.enroll.customers.dao.impl.EnrollmentDAOImpl category">com.citibank.enroll.customers.dao.impl.EnrollmentDAOImpl</td>
+<td>EnrollmentDAOImpl.java:97</td>
+<td title="Message">EnrollmentDAOImpl  Exit</td>
+</tr>
+
+<tr>
+<td>1519127</td>
+<td title="http-nio-9999-exec-2 thread">http-nio-9999-exec-2</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.citibank.enroll.customers.service.impl.EnrollmentProcessImpl category">com.citibank.enroll.customers.service.impl.EnrollmentProcessImpl</td>
+<td>EnrollmentProcessImpl.java:55</td>
+<td title="Message">Exit from Enrollment Process</td>
+</tr>
+
+<tr>
+<td>1519128</td>
+<td title="http-nio-9999-exec-2 thread">http-nio-9999-exec-2</td>
+<td title="Level">INFO</td>
+<td title="com.citibank.enroll.customers.controller.EnrollmentController category">com.citibank.enroll.customers.controller.EnrollmentController</td>
+<td>EnrollmentController.java:97</td>
+<td title="Message">Exit From Resouce Layer :: EnrollmentResourceRes(status=StatusBlock(respCode=good, respMsg=good, status=delivered))</td>
+</tr>
+
+<tr>
+<td>1631488</td>
+<td title="http-nio-9999-exec-2 thread">http-nio-9999-exec-2</td>
+<td title="Level">INFO</td>
+<td title="com.citibank.enroll.customers.controller.EnrollmentController category">com.citibank.enroll.customers.controller.EnrollmentController</td>
+<td>EnrollmentController.java:61</td>
+<td title="Message">Entered into Resouce Layer :: EnrollmentResourceReq(clientContext=ClientContext(clientId=C-101, channelId=mbile, requestid=null, msgTimeStamp=Fri Jul 24 20:15:59 IST 2020), custInfo=CustmerInfo(mobileNo=[9981886715, 7987037711], email=prafullsahu2217@gmail.com, cardNo=6104001500002436, cvvNo=185, expDate=03-25, nameOnCard=Prafull Kuamr), serviceDetails=com.citibank.enroll.customers.model.ServiceDetails@5201d509)</td>
+</tr>
+
+<tr>
+<td>1631489</td>
+<td title="http-nio-9999-exec-2 thread">http-nio-9999-exec-2</td>
+<td title="Level">INFO</td>
+<td title="com.citibank.enroll.customers.service.impl.EnrollmentProcessImpl category">com.citibank.enroll.customers.service.impl.EnrollmentProcessImpl</td>
+<td>EnrollmentProcessImpl.java:35</td>
+<td title="Message">Enter into Process  :: EnrollmentProcessReq(clientId=C-101, channelId=mbile, mobileNo=[9981886715, 7987037711], email=prafullsahu2217@gmail.com, cardNo=6104001500002436, cvvNo=185, expDate=03-25, nameOnCard=Prafull Kuamr)</td>
+</tr>
+
+<tr>
+<td>1631489</td>
+<td title="http-nio-9999-exec-2 thread">http-nio-9999-exec-2</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.citibank.enroll.customers.service.impl.EnrollmentProcessImpl category">com.citibank.enroll.customers.service.impl.EnrollmentProcessImpl</td>
+<td>EnrollmentProcessImpl.java:38</td>
+<td title="Message">EnrollmentProcessImpl Request </td>
+</tr>
+
+<tr>
+<td>1631489</td>
+<td title="http-nio-9999-exec-2 thread">http-nio-9999-exec-2</td>
+<td title="Level">INFO</td>
+<td title="com.citibank.enroll.customers.svcclient.impl.CardverifyServicClientImpl category">com.citibank.enroll.customers.svcclient.impl.CardverifyServicClientImpl</td>
+<td>CardverifyServicClientImpl.java:16</td>
+<td title="Message">Entered into Card Verify service CardverifyServicClientReq(cardNo=6104001500002436, cvvNo=185, expDate=185, nameOnCard=Prafull Kuamr)</td>
+</tr>
+
+<tr>
+<td>1631490</td>
+<td title="http-nio-9999-exec-2 thread">http-nio-9999-exec-2</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.citibank.enroll.customers.svcclient.impl.CardverifyServicClientImpl category">com.citibank.enroll.customers.svcclient.impl.CardverifyServicClientImpl</td>
+<td>CardverifyServicClientImpl.java:17</td>
+<td title="Message">CardverifyServicClientImpl  Request </td>
+</tr>
+
+<tr>
+<td>1631490</td>
+<td title="http-nio-9999-exec-2 thread">http-nio-9999-exec-2</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.citibank.enroll.customers.svcclient.impl.CardverifyServicClientImpl category">com.citibank.enroll.customers.svcclient.impl.CardverifyServicClientImpl</td>
+<td>CardverifyServicClientImpl.java:25</td>
+<td title="Message">CardverifyServicClientImpl  Exit</td>
+</tr>
+
+<tr>
+<td>1631491</td>
+<td title="http-nio-9999-exec-2 thread">http-nio-9999-exec-2</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.citibank.enroll.customers.dao.impl.EnrollmentDAOImpl category">com.citibank.enroll.customers.dao.impl.EnrollmentDAOImpl</td>
+<td>EnrollmentDAOImpl.java:31</td>
+<td title="Message">Entered into EnrollmentDAOImpl</td>
+</tr>
+
+<tr>
+<td>1631491</td>
+<td title="http-nio-9999-exec-2 thread">http-nio-9999-exec-2</td>
+<td title="Level">INFO</td>
+<td title="com.citibank.enroll.customers.dao.impl.EnrollmentDAOImpl category">com.citibank.enroll.customers.dao.impl.EnrollmentDAOImpl</td>
+<td>EnrollmentDAOImpl.java:32</td>
+<td title="Message">EnrollmentDAOImpl  RequestEnrollmentDAOReq(clientId=mbile, channelId=mbile, mobileNo=[9981886715, 7987037711], email=prafullsahu2217@gmail.com, cardNo=6104001500002436, cvvNo=185, expDate=03-25, nameOnCard=Prafull Kuamr)</td>
+</tr>
+
+<tr>
+<td>1768737</td>
+<td title="http-nio-9999-exec-2 thread">http-nio-9999-exec-2</td>
+<td title="Level">INFO</td>
+<td title="com.citibank.enroll.customers.controller.EnrollmentController category">com.citibank.enroll.customers.controller.EnrollmentController</td>
+<td>EnrollmentController.java:61</td>
+<td title="Message">Entered into Resouce Layer :: EnrollmentResourceReq(clientContext=ClientContext(clientId=C-101, channelId=mbile, requestid=null, msgTimeStamp=Fri Jul 24 20:15:59 IST 2020), custInfo=CustmerInfo(mobileNo=[9981886715, 7987037711], email=prafullsahu2217@gmail.com, cardNo=6104001500002436, cvvNo=185, expDate=03-25, nameOnCard=Prafull Kuamr), serviceDetails=com.citibank.enroll.customers.model.ServiceDetails@f602157)</td>
+</tr>
+
+<tr>
+<td>1768738</td>
+<td title="http-nio-9999-exec-2 thread">http-nio-9999-exec-2</td>
+<td title="Level">INFO</td>
+<td title="com.citibank.enroll.customers.service.impl.EnrollmentProcessImpl category">com.citibank.enroll.customers.service.impl.EnrollmentProcessImpl</td>
+<td>EnrollmentProcessImpl.java:35</td>
+<td title="Message">Enter into Process  :: EnrollmentProcessReq(clientId=C-101, channelId=mbile, mobileNo=[9981886715, 7987037711], email=prafullsahu2217@gmail.com, cardNo=6104001500002436, cvvNo=185, expDate=03-25, nameOnCard=Prafull Kuamr)</td>
+</tr>
+
+<tr>
+<td>1768739</td>
+<td title="http-nio-9999-exec-2 thread">http-nio-9999-exec-2</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.citibank.enroll.customers.service.impl.EnrollmentProcessImpl category">com.citibank.enroll.customers.service.impl.EnrollmentProcessImpl</td>
+<td>EnrollmentProcessImpl.java:38</td>
+<td title="Message">EnrollmentProcessImpl Request </td>
+</tr>
+
+<tr>
+<td>1768739</td>
+<td title="http-nio-9999-exec-2 thread">http-nio-9999-exec-2</td>
+<td title="Level">INFO</td>
+<td title="com.citibank.enroll.customers.svcclient.impl.CardverifyServicClientImpl category">com.citibank.enroll.customers.svcclient.impl.CardverifyServicClientImpl</td>
+<td>CardverifyServicClientImpl.java:16</td>
+<td title="Message">Entered into Card Verify service CardverifyServicClientReq(cardNo=6104001500002436, cvvNo=185, expDate=185, nameOnCard=Prafull Kuamr)</td>
+</tr>
+
+<tr>
+<td>1768739</td>
+<td title="http-nio-9999-exec-2 thread">http-nio-9999-exec-2</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.citibank.enroll.customers.svcclient.impl.CardverifyServicClientImpl category">com.citibank.enroll.customers.svcclient.impl.CardverifyServicClientImpl</td>
+<td>CardverifyServicClientImpl.java:17</td>
+<td title="Message">CardverifyServicClientImpl  Request </td>
+</tr>
+
+<tr>
+<td>1768740</td>
+<td title="http-nio-9999-exec-2 thread">http-nio-9999-exec-2</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.citibank.enroll.customers.svcclient.impl.CardverifyServicClientImpl category">com.citibank.enroll.customers.svcclient.impl.CardverifyServicClientImpl</td>
+<td>CardverifyServicClientImpl.java:25</td>
+<td title="Message">CardverifyServicClientImpl  Exit</td>
+</tr>
+
+<tr>
+<td>1768741</td>
+<td title="http-nio-9999-exec-2 thread">http-nio-9999-exec-2</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.citibank.enroll.customers.dao.impl.EnrollmentDAOImpl category">com.citibank.enroll.customers.dao.impl.EnrollmentDAOImpl</td>
+<td>EnrollmentDAOImpl.java:31</td>
+<td title="Message">Entered into EnrollmentDAOImpl</td>
+</tr>
+
+<tr>
+<td>1768741</td>
+<td title="http-nio-9999-exec-2 thread">http-nio-9999-exec-2</td>
+<td title="Level">INFO</td>
+<td title="com.citibank.enroll.customers.dao.impl.EnrollmentDAOImpl category">com.citibank.enroll.customers.dao.impl.EnrollmentDAOImpl</td>
+<td>EnrollmentDAOImpl.java:32</td>
+<td title="Message">EnrollmentDAOImpl  RequestEnrollmentDAOReq(clientId=mbile, channelId=mbile, mobileNo=[9981886715, 7987037711], email=prafullsahu2217@gmail.com, cardNo=6104001500002436, cvvNo=185, expDate=03-25, nameOnCard=Prafull Kuamr)</td>
+</tr>
+
+<tr>
+<td>1779749</td>
+<td title="http-nio-9999-exec-2 thread">http-nio-9999-exec-2</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.citibank.enroll.customers.dao.impl.EnrollmentDAOImpl category">com.citibank.enroll.customers.dao.impl.EnrollmentDAOImpl</td>
+<td>EnrollmentDAOImpl.java:97</td>
+<td title="Message">EnrollmentDAOImpl  Exit</td>
+</tr>
+
+<tr>
+<td>1779751</td>
+<td title="http-nio-9999-exec-2 thread">http-nio-9999-exec-2</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.citibank.enroll.customers.service.impl.EnrollmentProcessImpl category">com.citibank.enroll.customers.service.impl.EnrollmentProcessImpl</td>
+<td>EnrollmentProcessImpl.java:55</td>
+<td title="Message">Exit from Enrollment Process</td>
+</tr>
+
+<tr>
+<td>1779752</td>
+<td title="http-nio-9999-exec-2 thread">http-nio-9999-exec-2</td>
+<td title="Level">INFO</td>
+<td title="com.citibank.enroll.customers.controller.EnrollmentController category">com.citibank.enroll.customers.controller.EnrollmentController</td>
+<td>EnrollmentController.java:97</td>
+<td title="Message">Exit From Resouce Layer :: EnrollmentResourceRes(status=StatusBlock(respCode=good, respMsg=good, status=delivered))</td>
+</tr>
+
+<tr>
+<td>2906729</td>
+<td title="http-nio-9999-exec-2 thread">http-nio-9999-exec-2</td>
+<td title="Level">INFO</td>
+<td title="com.citibank.enroll.customers.controller.EnrollmentController category">com.citibank.enroll.customers.controller.EnrollmentController</td>
+<td>EnrollmentController.java:61</td>
+<td title="Message">Entered into Resouce Layer :: EnrollmentResourceReq(clientContext=ClientContext(clientId=C-101, channelId=mbile, requestid=null, msgTimeStamp=Fri Jul 24 20:15:59 IST 2020), custInfo=CustmerInfo(mobileNo=[9981886715, 7987037711], email=prafullsahu2217@gmail.com, cardNo=6104001500002436, cvvNo=185, expDate=03-25, nameOnCard=Prafull Kuamr), serviceDetails=com.citibank.enroll.customers.model.ServiceDetails@14e17b84)</td>
+</tr>
+
+<tr>
+<td>2906731</td>
+<td title="http-nio-9999-exec-2 thread">http-nio-9999-exec-2</td>
+<td title="Level">INFO</td>
+<td title="com.citibank.enroll.customers.service.impl.EnrollmentProcessImpl category">com.citibank.enroll.customers.service.impl.EnrollmentProcessImpl</td>
+<td>EnrollmentProcessImpl.java:35</td>
+<td title="Message">Enter into Process  :: EnrollmentProcessReq(clientId=C-101, channelId=mbile, mobileNo=[9981886715, 7987037711], email=prafullsahu2217@gmail.com, cardNo=6104001500002436, cvvNo=185, expDate=03-25, nameOnCard=Prafull Kuamr)</td>
+</tr>
+
+<tr>
+<td>2906731</td>
+<td title="http-nio-9999-exec-2 thread">http-nio-9999-exec-2</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.citibank.enroll.customers.service.impl.EnrollmentProcessImpl category">com.citibank.enroll.customers.service.impl.EnrollmentProcessImpl</td>
+<td>EnrollmentProcessImpl.java:38</td>
+<td title="Message">EnrollmentProcessImpl Request </td>
+</tr>
+
+<tr>
+<td>2906732</td>
+<td title="http-nio-9999-exec-2 thread">http-nio-9999-exec-2</td>
+<td title="Level">INFO</td>
+<td title="com.citibank.enroll.customers.svcclient.impl.CardverifyServicClientImpl category">com.citibank.enroll.customers.svcclient.impl.CardverifyServicClientImpl</td>
+<td>CardverifyServicClientImpl.java:16</td>
+<td title="Message">Entered into Card Verify service CardverifyServicClientReq(cardNo=6104001500002436, cvvNo=185, expDate=185, nameOnCard=Prafull Kuamr)</td>
+</tr>
+
+<tr>
+<td>2906732</td>
+<td title="http-nio-9999-exec-2 thread">http-nio-9999-exec-2</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.citibank.enroll.customers.svcclient.impl.CardverifyServicClientImpl category">com.citibank.enroll.customers.svcclient.impl.CardverifyServicClientImpl</td>
+<td>CardverifyServicClientImpl.java:17</td>
+<td title="Message">CardverifyServicClientImpl  Request </td>
+</tr>
+
+<tr>
+<td>2906733</td>
+<td title="http-nio-9999-exec-2 thread">http-nio-9999-exec-2</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.citibank.enroll.customers.svcclient.impl.CardverifyServicClientImpl category">com.citibank.enroll.customers.svcclient.impl.CardverifyServicClientImpl</td>
+<td>CardverifyServicClientImpl.java:25</td>
+<td title="Message">CardverifyServicClientImpl  Exit</td>
+</tr>
+
+<tr>
+<td>2906733</td>
+<td title="http-nio-9999-exec-2 thread">http-nio-9999-exec-2</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.citibank.enroll.customers.dao.impl.EnrollmentDAOImpl category">com.citibank.enroll.customers.dao.impl.EnrollmentDAOImpl</td>
+<td>EnrollmentDAOImpl.java:31</td>
+<td title="Message">Entered into EnrollmentDAOImpl</td>
+</tr>
+
+<tr>
+<td>2906733</td>
+<td title="http-nio-9999-exec-2 thread">http-nio-9999-exec-2</td>
+<td title="Level">INFO</td>
+<td title="com.citibank.enroll.customers.dao.impl.EnrollmentDAOImpl category">com.citibank.enroll.customers.dao.impl.EnrollmentDAOImpl</td>
+<td>EnrollmentDAOImpl.java:32</td>
+<td title="Message">EnrollmentDAOImpl  RequestEnrollmentDAOReq(clientId=mbile, channelId=mbile, mobileNo=[9981886715, 7987037711], email=prafullsahu2217@gmail.com, cardNo=6104001500002436, cvvNo=185, expDate=03-25, nameOnCard=Prafull Kuamr)</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>HTML Layout Example</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Thu Sep 03 17:09:29 IST 2020<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>1</td>
+<td title="http-nio-9999-exec-1 thread">http-nio-9999-exec-1</td>
+<td title="Level">INFO</td>
+<td title="com.citibank.enroll.customers.controller.EnrollmentController category">com.citibank.enroll.customers.controller.EnrollmentController</td>
+<td>EnrollmentController.java:61</td>
+<td title="Message">Entered into Resouce Layer :: EnrollmentResourceReq(clientContext=ClientContext(clientId=C-101, channelId=mbile, requestid=null, msgTimeStamp=Fri Jul 24 20:15:59 IST 2020), custInfo=CustmerInfo(mobileNo=[9981886715, 7987037711], email=prafullsahu2217@gmail.com, cardNo=6104001500002436, cvvNo=185, expDate=03-25, nameOnCard=Prafull Kuamr), serviceDetails=com.citibank.enroll.customers.model.ServiceDetails@586799d0)</td>
+</tr>
+
+<tr>
+<td>18</td>
+<td title="http-nio-9999-exec-1 thread">http-nio-9999-exec-1</td>
+<td title="Level">INFO</td>
+<td title="com.citibank.enroll.customers.service.impl.EnrollmentProcessImpl category">com.citibank.enroll.customers.service.impl.EnrollmentProcessImpl</td>
+<td>EnrollmentProcessImpl.java:35</td>
+<td title="Message">Enter into Process  :: EnrollmentProcessReq(clientId=C-101, channelId=mbile, mobileNo=[9981886715, 7987037711], email=prafullsahu2217@gmail.com, cardNo=6104001500002436, cvvNo=185, expDate=03-25, nameOnCard=Prafull Kuamr)</td>
+</tr>
+
+<tr>
+<td>18</td>
+<td title="http-nio-9999-exec-1 thread">http-nio-9999-exec-1</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.citibank.enroll.customers.service.impl.EnrollmentProcessImpl category">com.citibank.enroll.customers.service.impl.EnrollmentProcessImpl</td>
+<td>EnrollmentProcessImpl.java:38</td>
+<td title="Message">EnrollmentProcessImpl Request </td>
+</tr>
+
+<tr>
+<td>19</td>
+<td title="http-nio-9999-exec-1 thread">http-nio-9999-exec-1</td>
+<td title="Level">INFO</td>
+<td title="com.citibank.enroll.customers.svcclient.impl.CardverifyServicClientImpl category">com.citibank.enroll.customers.svcclient.impl.CardverifyServicClientImpl</td>
+<td>CardverifyServicClientImpl.java:16</td>
+<td title="Message">Entered into Card Verify service CardverifyServicClientReq(cardNo=6104001500002436, cvvNo=185, expDate=185, nameOnCard=Prafull Kuamr)</td>
+</tr>
+
+<tr>
+<td>19</td>
+<td title="http-nio-9999-exec-1 thread">http-nio-9999-exec-1</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.citibank.enroll.customers.svcclient.impl.CardverifyServicClientImpl category">com.citibank.enroll.customers.svcclient.impl.CardverifyServicClientImpl</td>
+<td>CardverifyServicClientImpl.java:17</td>
+<td title="Message">CardverifyServicClientImpl  Request </td>
+</tr>
+
+<tr>
+<td>20</td>
+<td title="http-nio-9999-exec-1 thread">http-nio-9999-exec-1</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.citibank.enroll.customers.svcclient.impl.CardverifyServicClientImpl category">com.citibank.enroll.customers.svcclient.impl.CardverifyServicClientImpl</td>
+<td>CardverifyServicClientImpl.java:25</td>
+<td title="Message">CardverifyServicClientImpl  Exit</td>
+</tr>
+
+<tr>
+<td>20</td>
+<td title="http-nio-9999-exec-1 thread">http-nio-9999-exec-1</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.citibank.enroll.customers.dao.impl.EnrollmentDAOImpl category">com.citibank.enroll.customers.dao.impl.EnrollmentDAOImpl</td>
+<td>EnrollmentDAOImpl.java:31</td>
+<td title="Message">Entered into EnrollmentDAOImpl</td>
+</tr>
+
+<tr>
+<td>21</td>
+<td title="http-nio-9999-exec-1 thread">http-nio-9999-exec-1</td>
+<td title="Level">INFO</td>
+<td title="com.citibank.enroll.customers.dao.impl.EnrollmentDAOImpl category">com.citibank.enroll.customers.dao.impl.EnrollmentDAOImpl</td>
+<td>EnrollmentDAOImpl.java:32</td>
+<td title="Message">EnrollmentDAOImpl  RequestEnrollmentDAOReq(clientId=mbile, channelId=mbile, mobileNo=[9981886715, 7987037711], email=prafullsahu2217@gmail.com, cardNo=6104001500002436, cvvNo=185, expDate=03-25, nameOnCard=Prafull Kuamr)</td>
+</tr>
+
+<tr>
+<td>24181</td>
+<td title="http-nio-9999-exec-1 thread">http-nio-9999-exec-1</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.citibank.enroll.customers.dao.impl.EnrollmentDAOImpl category">com.citibank.enroll.customers.dao.impl.EnrollmentDAOImpl</td>
+<td>EnrollmentDAOImpl.java:92</td>
+<td title="Message">EnrollmentDAOImpl  Exit</td>
+</tr>
+
+<tr>
+<td>24181</td>
+<td title="http-nio-9999-exec-1 thread">http-nio-9999-exec-1</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.citibank.enroll.customers.service.impl.EnrollmentProcessImpl category">com.citibank.enroll.customers.service.impl.EnrollmentProcessImpl</td>
+<td>EnrollmentProcessImpl.java:55</td>
+<td title="Message">Exit from Enrollment Process</td>
+</tr>
+
+<tr>
+<td>24182</td>
+<td title="http-nio-9999-exec-1 thread">http-nio-9999-exec-1</td>
+<td title="Level">INFO</td>
+<td title="com.citibank.enroll.customers.controller.EnrollmentController category">com.citibank.enroll.customers.controller.EnrollmentController</td>
+<td>EnrollmentController.java:97</td>
+<td title="Message">Exit From Resouce Layer :: EnrollmentResourceRes(status=StatusBlock(respCode=good, respMsg=good, status=delivered))</td>
+</tr>
+
+<tr>
+<td>346217</td>
+<td title="http-nio-9999-exec-1 thread">http-nio-9999-exec-1</td>
+<td title="Level">INFO</td>
+<td title="com.citibank.enroll.customers.controller.EnrollmentController category">com.citibank.enroll.customers.controller.EnrollmentController</td>
+<td>EnrollmentController.java:61</td>
+<td title="Message">Entered into Resouce Layer :: EnrollmentResourceReq(clientContext=ClientContext(clientId=C-101, channelId=mbile, requestid=null, msgTimeStamp=Fri Jul 24 20:15:59 IST 2020), custInfo=CustmerInfo(mobileNo=[9981886715, 7987037711], email=null, cardNo=6104001500002436, cvvNo=185, expDate=03-25, nameOnCard=Prafull Kuamr), serviceDetails=com.citibank.enroll.customers.model.ServiceDetails@25da710d)</td>
+</tr>
+
+<tr>
+<td>346218</td>
+<td title="http-nio-9999-exec-1 thread">http-nio-9999-exec-1</td>
+<td title="Level">INFO</td>
+<td title="com.citibank.enroll.customers.service.impl.EnrollmentProcessImpl category">com.citibank.enroll.customers.service.impl.EnrollmentProcessImpl</td>
+<td>EnrollmentProcessImpl.java:35</td>
+<td title="Message">Enter into Process  :: EnrollmentProcessReq(clientId=C-101, channelId=mbile, mobileNo=[9981886715, 7987037711], email=null, cardNo=6104001500002436, cvvNo=185, expDate=03-25, nameOnCard=Prafull Kuamr)</td>
+</tr>
+
+<tr>
+<td>346218</td>
+<td title="http-nio-9999-exec-1 thread">http-nio-9999-exec-1</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.citibank.enroll.customers.service.impl.EnrollmentProcessImpl category">com.citibank.enroll.customers.service.impl.EnrollmentProcessImpl</td>
+<td>EnrollmentProcessImpl.java:38</td>
+<td title="Message">EnrollmentProcessImpl Request </td>
+</tr>
+
+<tr>
+<td>346218</td>
+<td title="http-nio-9999-exec-1 thread">http-nio-9999-exec-1</td>
+<td title="Level">INFO</td>
+<td title="com.citibank.enroll.customers.svcclient.impl.CardverifyServicClientImpl category">com.citibank.enroll.customers.svcclient.impl.CardverifyServicClientImpl</td>
+<td>CardverifyServicClientImpl.java:16</td>
+<td title="Message">Entered into Card Verify service CardverifyServicClientReq(cardNo=6104001500002436, cvvNo=185, expDate=185, nameOnCard=Prafull Kuamr)</td>
+</tr>
+
+<tr>
+<td>346219</td>
+<td title="http-nio-9999-exec-1 thread">http-nio-9999-exec-1</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.citibank.enroll.customers.svcclient.impl.CardverifyServicClientImpl category">com.citibank.enroll.customers.svcclient.impl.CardverifyServicClientImpl</td>
+<td>CardverifyServicClientImpl.java:17</td>
+<td title="Message">CardverifyServicClientImpl  Request </td>
+</tr>
+
+<tr>
+<td>346219</td>
+<td title="http-nio-9999-exec-1 thread">http-nio-9999-exec-1</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.citibank.enroll.customers.svcclient.impl.CardverifyServicClientImpl category">com.citibank.enroll.customers.svcclient.impl.CardverifyServicClientImpl</td>
+<td>CardverifyServicClientImpl.java:25</td>
+<td title="Message">CardverifyServicClientImpl  Exit</td>
+</tr>
+
+<tr>
+<td>346220</td>
+<td title="http-nio-9999-exec-1 thread">http-nio-9999-exec-1</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.citibank.enroll.customers.dao.impl.EnrollmentDAOImpl category">com.citibank.enroll.customers.dao.impl.EnrollmentDAOImpl</td>
+<td>EnrollmentDAOImpl.java:31</td>
+<td title="Message">Entered into EnrollmentDAOImpl</td>
+</tr>
+
+<tr>
+<td>346220</td>
+<td title="http-nio-9999-exec-1 thread">http-nio-9999-exec-1</td>
+<td title="Level">INFO</td>
+<td title="com.citibank.enroll.customers.dao.impl.EnrollmentDAOImpl category">com.citibank.enroll.customers.dao.impl.EnrollmentDAOImpl</td>
+<td>EnrollmentDAOImpl.java:32</td>
+<td title="Message">EnrollmentDAOImpl  RequestEnrollmentDAOReq(clientId=mbile, channelId=mbile, mobileNo=[9981886715, 7987037711], email=null, cardNo=6104001500002436, cvvNo=185, expDate=03-25, nameOnCard=Prafull Kuamr)</td>
+</tr>
+
+<tr>
+<td>346221</td>
+<td title="http-nio-9999-exec-1 thread">http-nio-9999-exec-1</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.citibank.enroll.customers.dao.impl.EnrollmentDAOImpl category">com.citibank.enroll.customers.dao.impl.EnrollmentDAOImpl</td>
+<td>EnrollmentDAOImpl.java:96</td>
+<td title="Message">EnrollmentDAOImpl  Exit</td>
+</tr>
+
+<tr>
+<td>346221</td>
+<td title="http-nio-9999-exec-1 thread">http-nio-9999-exec-1</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.citibank.enroll.customers.service.impl.EnrollmentProcessImpl category">com.citibank.enroll.customers.service.impl.EnrollmentProcessImpl</td>
+<td>EnrollmentProcessImpl.java:55</td>
+<td title="Message">Exit from Enrollment Process</td>
+</tr>
+
+<tr>
+<td>346221</td>
+<td title="http-nio-9999-exec-1 thread">http-nio-9999-exec-1</td>
+<td title="Level">INFO</td>
+<td title="com.citibank.enroll.customers.controller.EnrollmentController category">com.citibank.enroll.customers.controller.EnrollmentController</td>
+<td>EnrollmentController.java:97</td>
+<td title="Message">Exit From Resouce Layer :: EnrollmentResourceRes(status=StatusBlock(respCode=good, respMsg=good, status=delivered))</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>HTML Layout Example</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Thu Sep 03 21:42:02 IST 2020<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="http-nio-9999-exec-2 thread">http-nio-9999-exec-2</td>
+<td title="Level">INFO</td>
+<td title="com.citibank.enroll.customers.controller.EnrollmentController category">com.citibank.enroll.customers.controller.EnrollmentController</td>
+<td>EnrollmentController.java:61</td>
+<td title="Message">Entered into Resouce Layer :: EnrollmentResourceReq(clientContext=ClientContext(clientId=C-101, channelId=mbile, requestid=null, msgTimeStamp=Fri Jul 24 20:15:59 IST 2020), custInfo=CustmerInfo(mobileNo=[9981886715, 7987037711], email=prafullsahu2217@gmail.com, cardNo=6104001500002436, cvvNo=185, expDate=03-25, nameOnCard=Prafull Kuamr), serviceDetails=com.citibank.enroll.customers.model.ServiceDetails@4241458f)</td>
+</tr>
+
+<tr>
+<td>7</td>
+<td title="http-nio-9999-exec-2 thread">http-nio-9999-exec-2</td>
+<td title="Level">INFO</td>
+<td title="com.citibank.enroll.customers.service.impl.EnrollmentProcessImpl category">com.citibank.enroll.customers.service.impl.EnrollmentProcessImpl</td>
+<td>EnrollmentProcessImpl.java:35</td>
+<td title="Message">Enter into Process  :: EnrollmentProcessReq(clientId=C-101, channelId=mbile, mobileNo=[9981886715, 7987037711], email=prafullsahu2217@gmail.com, cardNo=6104001500002436, cvvNo=185, expDate=03-25, nameOnCard=Prafull Kuamr)</td>
+</tr>
+
+<tr>
+<td>8</td>
+<td title="http-nio-9999-exec-2 thread">http-nio-9999-exec-2</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.citibank.enroll.customers.service.impl.EnrollmentProcessImpl category">com.citibank.enroll.customers.service.impl.EnrollmentProcessImpl</td>
+<td>EnrollmentProcessImpl.java:38</td>
+<td title="Message">EnrollmentProcessImpl Request </td>
+</tr>
+
+<tr>
+<td>9</td>
+<td title="http-nio-9999-exec-2 thread">http-nio-9999-exec-2</td>
+<td title="Level">INFO</td>
+<td title="com.citibank.enroll.customers.svcclient.impl.CardverifyServicClientImpl category">com.citibank.enroll.customers.svcclient.impl.CardverifyServicClientImpl</td>
+<td>CardverifyServicClientImpl.java:16</td>
+<td title="Message">Entered into Card Verify service CardverifyServicClientReq(cardNo=6104001500002436, cvvNo=185, expDate=185, nameOnCard=Prafull Kuamr)</td>
+</tr>
+
+<tr>
+<td>9</td>
+<td title="http-nio-9999-exec-2 thread">http-nio-9999-exec-2</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.citibank.enroll.customers.svcclient.impl.CardverifyServicClientImpl category">com.citibank.enroll.customers.svcclient.impl.CardverifyServicClientImpl</td>
+<td>CardverifyServicClientImpl.java:17</td>
+<td title="Message">CardverifyServicClientImpl  Request </td>
+</tr>
+
+<tr>
+<td>10</td>
+<td title="http-nio-9999-exec-2 thread">http-nio-9999-exec-2</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.citibank.enroll.customers.svcclient.impl.CardverifyServicClientImpl category">com.citibank.enroll.customers.svcclient.impl.CardverifyServicClientImpl</td>
+<td>CardverifyServicClientImpl.java:25</td>
+<td title="Message">CardverifyServicClientImpl  Exit</td>
+</tr>
+
+<tr>
+<td>14</td>
+<td title="http-nio-9999-exec-2 thread">http-nio-9999-exec-2</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.citibank.enroll.customers.dao.impl.EnrollmentDAOImpl category">com.citibank.enroll.customers.dao.impl.EnrollmentDAOImpl</td>
+<td>EnrollmentDAOImpl.java:31</td>
+<td title="Message">Entered into EnrollmentDAOImpl</td>
+</tr>
+
+<tr>
+<td>15</td>
+<td title="http-nio-9999-exec-2 thread">http-nio-9999-exec-2</td>
+<td title="Level">INFO</td>
+<td title="com.citibank.enroll.customers.dao.impl.EnrollmentDAOImpl category">com.citibank.enroll.customers.dao.impl.EnrollmentDAOImpl</td>
+<td>EnrollmentDAOImpl.java:32</td>
+<td title="Message">EnrollmentDAOImpl  RequestEnrollmentDAOReq(clientId=mbile, channelId=mbile, mobileNo=[9981886715, 7987037711], email=prafullsahu2217@gmail.com, cardNo=6104001500002436, cvvNo=185, expDate=03-25, nameOnCard=Prafull Kuamr)</td>
+</tr>
+
+<tr>
+<td>13781</td>
+<td title="http-nio-9999-exec-2 thread">http-nio-9999-exec-2</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.citibank.enroll.customers.dao.impl.EnrollmentDAOImpl category">com.citibank.enroll.customers.dao.impl.EnrollmentDAOImpl</td>
+<td>EnrollmentDAOImpl.java:94</td>
+<td title="Message">EnrollmentDAOImpl  Exit</td>
+</tr>
+
+<tr>
+<td>13782</td>
+<td title="http-nio-9999-exec-2 thread">http-nio-9999-exec-2</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.citibank.enroll.customers.service.impl.EnrollmentProcessImpl category">com.citibank.enroll.customers.service.impl.EnrollmentProcessImpl</td>
+<td>EnrollmentProcessImpl.java:55</td>
+<td title="Message">Exit from Enrollment Process</td>
+</tr>
+
+<tr>
+<td>13783</td>
+<td title="http-nio-9999-exec-2 thread">http-nio-9999-exec-2</td>
+<td title="Level">INFO</td>
+<td title="com.citibank.enroll.customers.controller.EnrollmentController category">com.citibank.enroll.customers.controller.EnrollmentController</td>
+<td>EnrollmentController.java:97</td>
+<td title="Message">Exit From Resouce Layer :: EnrollmentResourceRes(status=StatusBlock(respCode=good, respMsg=good, status=delivered))</td>
+</tr>
+
+<tr>
+<td>242510</td>
+<td title="http-nio-9999-exec-5 thread">http-nio-9999-exec-5</td>
+<td title="Level">INFO</td>
+<td title="com.citibank.enroll.customers.controller.EnrollmentController category">com.citibank.enroll.customers.controller.EnrollmentController</td>
+<td>EnrollmentController.java:61</td>
+<td title="Message">Entered into Resouce Layer :: EnrollmentResourceReq(clientContext=ClientContext(clientId=C-101, channelId=mbile, requestid=null, msgTimeStamp=Fri Jul 24 20:15:59 IST 2020), custInfo=CustmerInfo(mobileNo=[9981886715, 7987037711], email=prafullsahu2217@gmail.com, cardNo=6104001500002436, cvvNo=185, expDate=03-25, nameOnCard=Prafull Kuamr), serviceDetails=com.citibank.enroll.customers.model.ServiceDetails@2ab7d7e6)</td>
+</tr>
+
+<tr>
+<td>242512</td>
+<td title="http-nio-9999-exec-5 thread">http-nio-9999-exec-5</td>
+<td title="Level">INFO</td>
+<td title="com.citibank.enroll.customers.service.impl.EnrollmentProcessImpl category">com.citibank.enroll.customers.service.impl.EnrollmentProcessImpl</td>
+<td>EnrollmentProcessImpl.java:35</td>
+<td title="Message">Enter into Process  :: EnrollmentProcessReq(clientId=C-101, channelId=mbile, mobileNo=[9981886715, 7987037711], email=prafullsahu2217@gmail.com, cardNo=6104001500002436, cvvNo=185, expDate=03-25, nameOnCard=Prafull Kuamr)</td>
+</tr>
+
+<tr>
+<td>242513</td>
+<td title="http-nio-9999-exec-5 thread">http-nio-9999-exec-5</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.citibank.enroll.customers.service.impl.EnrollmentProcessImpl category">com.citibank.enroll.customers.service.impl.EnrollmentProcessImpl</td>
+<td>EnrollmentProcessImpl.java:38</td>
+<td title="Message">EnrollmentProcessImpl Request </td>
+</tr>
+
+<tr>
+<td>242514</td>
+<td title="http-nio-9999-exec-5 thread">http-nio-9999-exec-5</td>
+<td title="Level">INFO</td>
+<td title="com.citibank.enroll.customers.svcclient.impl.CardverifyServicClientImpl category">com.citibank.enroll.customers.svcclient.impl.CardverifyServicClientImpl</td>
+<td>CardverifyServicClientImpl.java:16</td>
+<td title="Message">Entered into Card Verify service CardverifyServicClientReq(cardNo=6104001500002436, cvvNo=185, expDate=185, nameOnCard=Prafull Kuamr)</td>
+</tr>
+
+<tr>
+<td>242514</td>
+<td title="http-nio-9999-exec-5 thread">http-nio-9999-exec-5</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.citibank.enroll.customers.svcclient.impl.CardverifyServicClientImpl category">com.citibank.enroll.customers.svcclient.impl.CardverifyServicClientImpl</td>
+<td>CardverifyServicClientImpl.java:17</td>
+<td title="Message">CardverifyServicClientImpl  Request </td>
+</tr>
+
+<tr>
+<td>242518</td>
+<td title="http-nio-9999-exec-5 thread">http-nio-9999-exec-5</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.citibank.enroll.customers.svcclient.impl.CardverifyServicClientImpl category">com.citibank.enroll.customers.svcclient.impl.CardverifyServicClientImpl</td>
+<td>CardverifyServicClientImpl.java:25</td>
+<td title="Message">CardverifyServicClientImpl  Exit</td>
+</tr>
+
+<tr>
+<td>242518</td>
+<td title="http-nio-9999-exec-5 thread">http-nio-9999-exec-5</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.citibank.enroll.customers.dao.impl.EnrollmentDAOImpl category">com.citibank.enroll.customers.dao.impl.EnrollmentDAOImpl</td>
+<td>EnrollmentDAOImpl.java:31</td>
+<td title="Message">Entered into EnrollmentDAOImpl</td>
+</tr>
+
+<tr>
+<td>242519</td>
+<td title="http-nio-9999-exec-5 thread">http-nio-9999-exec-5</td>
+<td title="Level">INFO</td>
+<td title="com.citibank.enroll.customers.dao.impl.EnrollmentDAOImpl category">com.citibank.enroll.customers.dao.impl.EnrollmentDAOImpl</td>
+<td>EnrollmentDAOImpl.java:32</td>
+<td title="Message">EnrollmentDAOImpl  RequestEnrollmentDAOReq(clientId=mbile, channelId=mbile, mobileNo=[9981886715, 7987037711], email=prafullsahu2217@gmail.com, cardNo=6104001500002436, cvvNo=185, expDate=03-25, nameOnCard=Prafull Kuamr)</td>
+</tr>
+
+<tr>
+<td>254403</td>
+<td title="http-nio-9999-exec-5 thread">http-nio-9999-exec-5</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.citibank.enroll.customers.dao.impl.EnrollmentDAOImpl category">com.citibank.enroll.customers.dao.impl.EnrollmentDAOImpl</td>
+<td>EnrollmentDAOImpl.java:94</td>
+<td title="Message">EnrollmentDAOImpl  Exit</td>
+</tr>
+
+<tr>
+<td>254404</td>
+<td title="http-nio-9999-exec-5 thread">http-nio-9999-exec-5</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.citibank.enroll.customers.service.impl.EnrollmentProcessImpl category">com.citibank.enroll.customers.service.impl.EnrollmentProcessImpl</td>
+<td>EnrollmentProcessImpl.java:55</td>
+<td title="Message">Exit from Enrollment Process</td>
+</tr>
+
+<tr>
+<td>254405</td>
+<td title="http-nio-9999-exec-5 thread">http-nio-9999-exec-5</td>
+<td title="Level">INFO</td>
+<td title="com.citibank.enroll.customers.controller.EnrollmentController category">com.citibank.enroll.customers.controller.EnrollmentController</td>
+<td>EnrollmentController.java:97</td>
+<td title="Message">Exit From Resouce Layer :: EnrollmentResourceRes(status=StatusBlock(respCode=good, respMsg=good, status=delivered))</td>
+</tr>
+
+<tr>
+<td>281151</td>
+<td title="http-nio-9999-exec-6 thread">http-nio-9999-exec-6</td>
+<td title="Level">INFO</td>
+<td title="com.citibank.enroll.customers.controller.EnrollmentController category">com.citibank.enroll.customers.controller.EnrollmentController</td>
+<td>EnrollmentController.java:61</td>
+<td title="Message">Entered into Resouce Layer :: EnrollmentResourceReq(clientContext=ClientContext(clientId=C-101, channelId=mbile, requestid=null, msgTimeStamp=Fri Jul 24 20:15:59 IST 2020), custInfo=CustmerInfo(mobileNo=[9981886715, 7987037711], email=prafullsahu2217@gmail.com, cardNo=6104001500002436, cvvNo=185, expDate=03-25, nameOnCard=Prafull Kuamr), serviceDetails=com.citibank.enroll.customers.model.ServiceDetails@b411345)</td>
+</tr>
+
+<tr>
+<td>281152</td>
+<td title="http-nio-9999-exec-6 thread">http-nio-9999-exec-6</td>
+<td title="Level">INFO</td>
+<td title="com.citibank.enroll.customers.service.impl.EnrollmentProcessImpl category">com.citibank.enroll.customers.service.impl.EnrollmentProcessImpl</td>
+<td>EnrollmentProcessImpl.java:35</td>
+<td title="Message">Enter into Process  :: EnrollmentProcessReq(clientId=C-101, channelId=mbile, mobileNo=[9981886715, 7987037711], email=prafullsahu2217@gmail.com, cardNo=6104001500002436, cvvNo=185, expDate=03-25, nameOnCard=Prafull Kuamr)</td>
+</tr>
+
+<tr>
+<td>281152</td>
+<td title="http-nio-9999-exec-6 thread">http-nio-9999-exec-6</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.citibank.enroll.customers.service.impl.EnrollmentProcessImpl category">com.citibank.enroll.customers.service.impl.EnrollmentProcessImpl</td>
+<td>EnrollmentProcessImpl.java:38</td>
+<td title="Message">EnrollmentProcessImpl Request </td>
+</tr>
+
+<tr>
+<td>281152</td>
+<td title="http-nio-9999-exec-6 thread">http-nio-9999-exec-6</td>
+<td title="Level">INFO</td>
+<td title="com.citibank.enroll.customers.svcclient.impl.CardverifyServicClientImpl category">com.citibank.enroll.customers.svcclient.impl.CardverifyServicClientImpl</td>
+<td>CardverifyServicClientImpl.java:16</td>
+<td title="Message">Entered into Card Verify service CardverifyServicClientReq(cardNo=6104001500002436, cvvNo=185, expDate=185, nameOnCard=Prafull Kuamr)</td>
+</tr>
+
+<tr>
+<td>281153</td>
+<td title="http-nio-9999-exec-6 thread">http-nio-9999-exec-6</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.citibank.enroll.customers.svcclient.impl.CardverifyServicClientImpl category">com.citibank.enroll.customers.svcclient.impl.CardverifyServicClientImpl</td>
+<td>CardverifyServicClientImpl.java:17</td>
+<td title="Message">CardverifyServicClientImpl  Request </td>
+</tr>
+
+<tr>
+<td>281153</td>
+<td title="http-nio-9999-exec-6 thread">http-nio-9999-exec-6</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.citibank.enroll.customers.svcclient.impl.CardverifyServicClientImpl category">com.citibank.enroll.customers.svcclient.impl.CardverifyServicClientImpl</td>
+<td>CardverifyServicClientImpl.java:25</td>
+<td title="Message">CardverifyServicClientImpl  Exit</td>
+</tr>
+
+<tr>
+<td>281153</td>
+<td title="http-nio-9999-exec-6 thread">http-nio-9999-exec-6</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.citibank.enroll.customers.dao.impl.EnrollmentDAOImpl category">com.citibank.enroll.customers.dao.impl.EnrollmentDAOImpl</td>
+<td>EnrollmentDAOImpl.java:31</td>
+<td title="Message">Entered into EnrollmentDAOImpl</td>
+</tr>
+
+<tr>
+<td>281154</td>
+<td title="http-nio-9999-exec-6 thread">http-nio-9999-exec-6</td>
+<td title="Level">INFO</td>
+<td title="com.citibank.enroll.customers.dao.impl.EnrollmentDAOImpl category">com.citibank.enroll.customers.dao.impl.EnrollmentDAOImpl</td>
+<td>EnrollmentDAOImpl.java:32</td>
+<td title="Message">EnrollmentDAOImpl  RequestEnrollmentDAOReq(clientId=mbile, channelId=mbile, mobileNo=[9981886715, 7987037711], email=prafullsahu2217@gmail.com, cardNo=6104001500002436, cvvNo=185, expDate=03-25, nameOnCard=Prafull Kuamr)</td>
+</tr>
+
+<tr>
+<td>294035</td>
+<td title="http-nio-9999-exec-6 thread">http-nio-9999-exec-6</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.citibank.enroll.customers.dao.impl.EnrollmentDAOImpl category">com.citibank.enroll.customers.dao.impl.EnrollmentDAOImpl</td>
+<td>EnrollmentDAOImpl.java:94</td>
+<td title="Message">EnrollmentDAOImpl  Exit</td>
+</tr>
+
+<tr>
+<td>294037</td>
+<td title="http-nio-9999-exec-6 thread">http-nio-9999-exec-6</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.citibank.enroll.customers.service.impl.EnrollmentProcessImpl category">com.citibank.enroll.customers.service.impl.EnrollmentProcessImpl</td>
+<td>EnrollmentProcessImpl.java:55</td>
+<td title="Message">Exit from Enrollment Process</td>
+</tr>
+
+<tr>
+<td>294038</td>
+<td title="http-nio-9999-exec-6 thread">http-nio-9999-exec-6</td>
+<td title="Level">INFO</td>
+<td title="com.citibank.enroll.customers.controller.EnrollmentController category">com.citibank.enroll.customers.controller.EnrollmentController</td>
+<td>EnrollmentController.java:97</td>
+<td title="Message">Exit From Resouce Layer :: EnrollmentResourceRes(status=StatusBlock(respCode=good, respMsg=good, status=delivered))</td>
+</tr>
+
+<tr>
+<td>1046427</td>
+<td title="http-nio-9999-exec-2 thread">http-nio-9999-exec-2</td>
+<td title="Level">INFO</td>
+<td title="com.citibank.enroll.customers.controller.EnrollmentController category">com.citibank.enroll.customers.controller.EnrollmentController</td>
+<td>EnrollmentController.java:61</td>
+<td title="Message">Entered into Resouce Layer :: EnrollmentResourceReq(clientContext=ClientContext(clientId=C-101, channelId=mbile, requestid=null, msgTimeStamp=Fri Jul 24 20:15:59 IST 2020), custInfo=CustmerInfo(mobileNo=[9981886715, 7987037711], email=prafullsahu2217@gmail.com, cardNo=6104001500002436, cvvNo=185, expDate=03-25, nameOnCard=Prafull Kuamr), serviceDetails=com.citibank.enroll.customers.model.ServiceDetails@11c2ad75)</td>
+</tr>
+
+<tr>
+<td>1046428</td>
+<td title="http-nio-9999-exec-2 thread">http-nio-9999-exec-2</td>
+<td title="Level">INFO</td>
+<td title="com.citibank.enroll.customers.service.impl.EnrollmentProcessImpl category">com.citibank.enroll.customers.service.impl.EnrollmentProcessImpl</td>
+<td>EnrollmentProcessImpl.java:35</td>
+<td title="Message">Enter into Process  :: EnrollmentProcessReq(clientId=C-101, channelId=mbile, mobileNo=[9981886715, 7987037711], email=prafullsahu2217@gmail.com, cardNo=6104001500002436, cvvNo=185, expDate=03-25, nameOnCard=Prafull Kuamr)</td>
+</tr>
+
+<tr>
+<td>1046429</td>
+<td title="http-nio-9999-exec-2 thread">http-nio-9999-exec-2</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.citibank.enroll.customers.service.impl.EnrollmentProcessImpl category">com.citibank.enroll.customers.service.impl.EnrollmentProcessImpl</td>
+<td>EnrollmentProcessImpl.java:38</td>
+<td title="Message">EnrollmentProcessImpl Request </td>
+</tr>
+
+<tr>
+<td>1046429</td>
+<td title="http-nio-9999-exec-2 thread">http-nio-9999-exec-2</td>
+<td title="Level">INFO</td>
+<td title="com.citibank.enroll.customers.svcclient.impl.CardverifyServicClientImpl category">com.citibank.enroll.customers.svcclient.impl.CardverifyServicClientImpl</td>
+<td>CardverifyServicClientImpl.java:16</td>
+<td title="Message">Entered into Card Verify service CardverifyServicClientReq(cardNo=6104001500002436, cvvNo=185, expDate=185, nameOnCard=Prafull Kuamr)</td>
+</tr>
+
+<tr>
+<td>1046430</td>
+<td title="http-nio-9999-exec-2 thread">http-nio-9999-exec-2</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.citibank.enroll.customers.svcclient.impl.CardverifyServicClientImpl category">com.citibank.enroll.customers.svcclient.impl.CardverifyServicClientImpl</td>
+<td>CardverifyServicClientImpl.java:17</td>
+<td title="Message">CardverifyServicClientImpl  Request </td>
+</tr>
+
+<tr>
+<td>1046431</td>
+<td title="http-nio-9999-exec-2 thread">http-nio-9999-exec-2</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.citibank.enroll.customers.svcclient.impl.CardverifyServicClientImpl category">com.citibank.enroll.customers.svcclient.impl.CardverifyServicClientImpl</td>
+<td>CardverifyServicClientImpl.java:25</td>
+<td title="Message">CardverifyServicClientImpl  Exit</td>
+</tr>
+
+<tr>
+<td>1046431</td>
+<td title="http-nio-9999-exec-2 thread">http-nio-9999-exec-2</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.citibank.enroll.customers.dao.impl.EnrollmentDAOImpl category">com.citibank.enroll.customers.dao.impl.EnrollmentDAOImpl</td>
+<td>EnrollmentDAOImpl.java:31</td>
+<td title="Message">Entered into EnrollmentDAOImpl</td>
+</tr>
+
+<tr>
+<td>1046431</td>
+<td title="http-nio-9999-exec-2 thread">http-nio-9999-exec-2</td>
+<td title="Level">INFO</td>
+<td title="com.citibank.enroll.customers.dao.impl.EnrollmentDAOImpl category">com.citibank.enroll.customers.dao.impl.EnrollmentDAOImpl</td>
+<td>EnrollmentDAOImpl.java:32</td>
+<td title="Message">EnrollmentDAOImpl  RequestEnrollmentDAOReq(clientId=mbile, channelId=mbile, mobileNo=[9981886715, 7987037711], email=prafullsahu2217@gmail.com, cardNo=6104001500002436, cvvNo=185, expDate=03-25, nameOnCard=Prafull Kuamr)</td>
+</tr>
+
+<tr>
+<td>1053298</td>
+<td title="http-nio-9999-exec-2 thread">http-nio-9999-exec-2</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.citibank.enroll.customers.dao.impl.EnrollmentDAOImpl category">com.citibank.enroll.customers.dao.impl.EnrollmentDAOImpl</td>
+<td>EnrollmentDAOImpl.java:94</td>
+<td title="Message">EnrollmentDAOImpl  Exit</td>
+</tr>
+
+<tr>
+<td>1053299</td>
+<td title="http-nio-9999-exec-2 thread">http-nio-9999-exec-2</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.citibank.enroll.customers.service.impl.EnrollmentProcessImpl category">com.citibank.enroll.customers.service.impl.EnrollmentProcessImpl</td>
+<td>EnrollmentProcessImpl.java:55</td>
+<td title="Message">Exit from Enrollment Process</td>
+</tr>
+
+<tr>
+<td>1053301</td>
+<td title="http-nio-9999-exec-2 thread">http-nio-9999-exec-2</td>
+<td title="Level">INFO</td>
+<td title="com.citibank.enroll.customers.controller.EnrollmentController category">com.citibank.enroll.customers.controller.EnrollmentController</td>
+<td>EnrollmentController.java:97</td>
+<td title="Message">Exit From Resouce Layer :: EnrollmentResourceRes(status=StatusBlock(respCode=good, respMsg=good, status=delivered))</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>HTML Layout Example</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Thu Sep 03 22:17:01 IST 2020<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="http-nio-9999-exec-1 thread">http-nio-9999-exec-1</td>
+<td title="Level">INFO</td>
+<td title="com.citibank.enroll.customers.controller.EnrollmentController category">com.citibank.enroll.customers.controller.EnrollmentController</td>
+<td>EnrollmentController.java:53</td>
+<td title="Message">Entered into Resouce Layer :: EnrollmentResourceReq(clientContext=ClientContext(clientId=C-101, channelId=mbile, requestid=null, msgTimeStamp=Fri Jul 24 20:15:59 IST 2020), custInfo=CustmerInfo(mobileNo=[9981886715, 7987037711], email=manishsahu354@gmail.com, cardNo=6104001500002436, cvvNo=176, expDate=03-25, nameOnCard=Prafull Kuamr), serviceDetails=com.citibank.enroll.customers.model.ServiceDetails@48ee5182)</td>
+</tr>
+
+<tr>
+<td>37</td>
+<td title="http-nio-9999-exec-1 thread">http-nio-9999-exec-1</td>
+<td title="Level">INFO</td>
+<td title="com.citibank.enroll.customers.service.impl.EnrollmentProcessImpl category">com.citibank.enroll.customers.service.impl.EnrollmentProcessImpl</td>
+<td>EnrollmentProcessImpl.java:35</td>
+<td title="Message">Enter into Process  :: EnrollmentProcessReq(clientId=C-101, channelId=mbile, mobileNo=[9981886715, 7987037711], email=manishsahu354@gmail.com, cardNo=6104001500002436, cvvNo=176, expDate=03-25, nameOnCard=Prafull Kuamr)</td>
+</tr>
+
+<tr>
+<td>38</td>
+<td title="http-nio-9999-exec-1 thread">http-nio-9999-exec-1</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.citibank.enroll.customers.service.impl.EnrollmentProcessImpl category">com.citibank.enroll.customers.service.impl.EnrollmentProcessImpl</td>
+<td>EnrollmentProcessImpl.java:39</td>
+<td title="Message">EnrollmentProcessImpl Request </td>
+</tr>
+
+<tr>
+<td>38</td>
+<td title="http-nio-9999-exec-1 thread">http-nio-9999-exec-1</td>
+<td title="Level">INFO</td>
+<td title="com.citibank.enroll.customers.svcclient.impl.CardverifyServicClientImpl category">com.citibank.enroll.customers.svcclient.impl.CardverifyServicClientImpl</td>
+<td>CardverifyServicClientImpl.java:18</td>
+<td title="Message">Entered into Card Verify service CardverifyServicClientReq(cardNo=6104001500002436, cvvNo=176, expDate=176, nameOnCard=Prafull Kuamr)</td>
+</tr>
+
+<tr>
+<td>39</td>
+<td title="http-nio-9999-exec-1 thread">http-nio-9999-exec-1</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.citibank.enroll.customers.svcclient.impl.CardverifyServicClientImpl category">com.citibank.enroll.customers.svcclient.impl.CardverifyServicClientImpl</td>
+<td>CardverifyServicClientImpl.java:20</td>
+<td title="Message">CardverifyServicClientImpl  Request </td>
+</tr>
+
+<tr>
+<td>39</td>
+<td title="http-nio-9999-exec-1 thread">http-nio-9999-exec-1</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.citibank.enroll.customers.svcclient.impl.CardverifyServicClientImpl category">com.citibank.enroll.customers.svcclient.impl.CardverifyServicClientImpl</td>
+<td>CardverifyServicClientImpl.java:32</td>
+<td title="Message">CardverifyServicClientImpl  Exit</td>
+</tr>
+
+<tr>
+<td>39</td>
+<td title="http-nio-9999-exec-1 thread">http-nio-9999-exec-1</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.citibank.enroll.customers.dao.impl.EnrollmentDAOImpl category">com.citibank.enroll.customers.dao.impl.EnrollmentDAOImpl</td>
+<td>EnrollmentDAOImpl.java:32</td>
+<td title="Message">Entered into EnrollmentDAOImpl</td>
+</tr>
+
+<tr>
+<td>40</td>
+<td title="http-nio-9999-exec-1 thread">http-nio-9999-exec-1</td>
+<td title="Level">INFO</td>
+<td title="com.citibank.enroll.customers.dao.impl.EnrollmentDAOImpl category">com.citibank.enroll.customers.dao.impl.EnrollmentDAOImpl</td>
+<td>EnrollmentDAOImpl.java:34</td>
+<td title="Message">EnrollmentDAOImpl  RequestEnrollmentDAOReq(clientId=mbile, channelId=mbile, mobileNo=[9981886715, 7987037711], email=manishsahu354@gmail.com, cardNo=6104001500002436, cvvNo=176, expDate=03-25, nameOnCard=Prafull Kuamr)</td>
+</tr>
+
+<tr>
+<td>7604</td>
+<td title="http-nio-9999-exec-1 thread">http-nio-9999-exec-1</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.citibank.enroll.customers.dao.impl.EnrollmentDAOImpl category">com.citibank.enroll.customers.dao.impl.EnrollmentDAOImpl</td>
+<td>EnrollmentDAOImpl.java:119</td>
+<td title="Message">EnrollmentDAOImpl  Exit</td>
+</tr>
+
+<tr>
+<td>7606</td>
+<td title="http-nio-9999-exec-1 thread">http-nio-9999-exec-1</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.citibank.enroll.customers.service.impl.EnrollmentProcessImpl category">com.citibank.enroll.customers.service.impl.EnrollmentProcessImpl</td>
+<td>EnrollmentProcessImpl.java:61</td>
+<td title="Message">Exit from Enrollment Process</td>
+</tr>
+
+<tr>
+<td>7607</td>
+<td title="http-nio-9999-exec-1 thread">http-nio-9999-exec-1</td>
+<td title="Level">INFO</td>
+<td title="com.citibank.enroll.customers.controller.EnrollmentController category">com.citibank.enroll.customers.controller.EnrollmentController</td>
+<td>EnrollmentController.java:96</td>
+<td title="Message">Exit From Resouce Layer :: EnrollmentResourceRes(status=StatusBlock(respCode=good, respMsg=good, status=delivered))</td>
+</tr>
+
+<tr>
+<td>51044</td>
+<td title="http-nio-9999-exec-2 thread">http-nio-9999-exec-2</td>
+<td title="Level">INFO</td>
+<td title="com.citibank.enroll.customers.controller.EnrollmentController category">com.citibank.enroll.customers.controller.EnrollmentController</td>
+<td>EnrollmentController.java:53</td>
+<td title="Message">Entered into Resouce Layer :: EnrollmentResourceReq(clientContext=ClientContext(clientId=C-101, channelId=mbile, requestid=null, msgTimeStamp=Fri Jul 24 20:15:59 IST 2020), custInfo=CustmerInfo(mobileNo=[9981886715, 7987037711], email=manishsahu354@gmail.com, cardNo=6104001500002436, cvvNo=176, expDate=03-25, nameOnCard=Prafull Kuamr), serviceDetails=com.citibank.enroll.customers.model.ServiceDetails@3c2135d7)</td>
+</tr>
+
+<tr>
+<td>51046</td>
+<td title="http-nio-9999-exec-2 thread">http-nio-9999-exec-2</td>
+<td title="Level">INFO</td>
+<td title="com.citibank.enroll.customers.service.impl.EnrollmentProcessImpl category">com.citibank.enroll.customers.service.impl.EnrollmentProcessImpl</td>
+<td>EnrollmentProcessImpl.java:35</td>
+<td title="Message">Enter into Process  :: EnrollmentProcessReq(clientId=C-101, channelId=mbile, mobileNo=[9981886715, 7987037711], email=manishsahu354@gmail.com, cardNo=6104001500002436, cvvNo=176, expDate=03-25, nameOnCard=Prafull Kuamr)</td>
+</tr>
+
+<tr>
+<td>51046</td>
+<td title="http-nio-9999-exec-2 thread">http-nio-9999-exec-2</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.citibank.enroll.customers.service.impl.EnrollmentProcessImpl category">com.citibank.enroll.customers.service.impl.EnrollmentProcessImpl</td>
+<td>EnrollmentProcessImpl.java:39</td>
+<td title="Message">EnrollmentProcessImpl Request </td>
+</tr>
+
+<tr>
+<td>51046</td>
+<td title="http-nio-9999-exec-2 thread">http-nio-9999-exec-2</td>
+<td title="Level">INFO</td>
+<td title="com.citibank.enroll.customers.svcclient.impl.CardverifyServicClientImpl category">com.citibank.enroll.customers.svcclient.impl.CardverifyServicClientImpl</td>
+<td>CardverifyServicClientImpl.java:18</td>
+<td title="Message">Entered into Card Verify service CardverifyServicClientReq(cardNo=6104001500002436, cvvNo=176, expDate=176, nameOnCard=Prafull Kuamr)</td>
+</tr>
+
+<tr>
+<td>51047</td>
+<td title="http-nio-9999-exec-2 thread">http-nio-9999-exec-2</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.citibank.enroll.customers.svcclient.impl.CardverifyServicClientImpl category">com.citibank.enroll.customers.svcclient.impl.CardverifyServicClientImpl</td>
+<td>CardverifyServicClientImpl.java:20</td>
+<td title="Message">CardverifyServicClientImpl  Request </td>
+</tr>
+
+<tr>
+<td>51048</td>
+<td title="http-nio-9999-exec-2 thread">http-nio-9999-exec-2</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.citibank.enroll.customers.svcclient.impl.CardverifyServicClientImpl category">com.citibank.enroll.customers.svcclient.impl.CardverifyServicClientImpl</td>
+<td>CardverifyServicClientImpl.java:32</td>
+<td title="Message">CardverifyServicClientImpl  Exit</td>
+</tr>
+
+<tr>
+<td>51049</td>
+<td title="http-nio-9999-exec-2 thread">http-nio-9999-exec-2</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.citibank.enroll.customers.dao.impl.EnrollmentDAOImpl category">com.citibank.enroll.customers.dao.impl.EnrollmentDAOImpl</td>
+<td>EnrollmentDAOImpl.java:32</td>
+<td title="Message">Entered into EnrollmentDAOImpl</td>
+</tr>
+
+<tr>
+<td>51049</td>
+<td title="http-nio-9999-exec-2 thread">http-nio-9999-exec-2</td>
+<td title="Level">INFO</td>
+<td title="com.citibank.enroll.customers.dao.impl.EnrollmentDAOImpl category">com.citibank.enroll.customers.dao.impl.EnrollmentDAOImpl</td>
+<td>EnrollmentDAOImpl.java:34</td>
+<td title="Message">EnrollmentDAOImpl  RequestEnrollmentDAOReq(clientId=mbile, channelId=mbile, mobileNo=[9981886715, 7987037711], email=manishsahu354@gmail.com, cardNo=6104001500002436, cvvNo=176, expDate=03-25, nameOnCard=Prafull Kuamr)</td>
+</tr>
+
+<tr>
+<td>62887</td>
+<td title="http-nio-9999-exec-2 thread">http-nio-9999-exec-2</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.citibank.enroll.customers.dao.impl.EnrollmentDAOImpl category">com.citibank.enroll.customers.dao.impl.EnrollmentDAOImpl</td>
+<td>EnrollmentDAOImpl.java:119</td>
+<td title="Message">EnrollmentDAOImpl  Exit</td>
+</tr>
+
+<tr>
+<td>62888</td>
+<td title="http-nio-9999-exec-2 thread">http-nio-9999-exec-2</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.citibank.enroll.customers.service.impl.EnrollmentProcessImpl category">com.citibank.enroll.customers.service.impl.EnrollmentProcessImpl</td>
+<td>EnrollmentProcessImpl.java:61</td>
+<td title="Message">Exit from Enrollment Process</td>
+</tr>
+
+<tr>
+<td>62890</td>
+<td title="http-nio-9999-exec-2 thread">http-nio-9999-exec-2</td>
+<td title="Level">INFO</td>
+<td title="com.citibank.enroll.customers.controller.EnrollmentController category">com.citibank.enroll.customers.controller.EnrollmentController</td>
+<td>EnrollmentController.java:96</td>
+<td title="Message">Exit From Resouce Layer :: EnrollmentResourceRes(status=StatusBlock(respCode=good, respMsg=good, status=delivered))</td>
+</tr>
+
+<tr>
+<td>193016</td>
+<td title="http-nio-9999-exec-2 thread">http-nio-9999-exec-2</td>
+<td title="Level">INFO</td>
+<td title="com.citibank.enroll.customers.controller.EnrollmentController category">com.citibank.enroll.customers.controller.EnrollmentController</td>
+<td>EnrollmentController.java:53</td>
+<td title="Message">Entered into Resouce Layer :: EnrollmentResourceReq(clientContext=ClientContext(clientId=C-101, channelId=mbile, requestid=null, msgTimeStamp=Fri Jul 24 20:15:59 IST 2020), custInfo=CustmerInfo(mobileNo=[9981886715, 7987037711], email=manishsahu354@gmail.com, cardNo=6104001500002436, cvvNo=176, expDate=03-25, nameOnCard=Prafull Kuamr), serviceDetails=com.citibank.enroll.customers.model.ServiceDetails@3a042b6b)</td>
+</tr>
+
+<tr>
+<td>193017</td>
+<td title="http-nio-9999-exec-2 thread">http-nio-9999-exec-2</td>
+<td title="Level">INFO</td>
+<td title="com.citibank.enroll.customers.service.impl.EnrollmentProcessImpl category">com.citibank.enroll.customers.service.impl.EnrollmentProcessImpl</td>
+<td>EnrollmentProcessImpl.java:35</td>
+<td title="Message">Enter into Process  :: EnrollmentProcessReq(clientId=C-101, channelId=mbile, mobileNo=[9981886715, 7987037711], email=manishsahu354@gmail.com, cardNo=6104001500002436, cvvNo=176, expDate=03-25, nameOnCard=Prafull Kuamr)</td>
+</tr>
+
+<tr>
+<td>193018</td>
+<td title="http-nio-9999-exec-2 thread">http-nio-9999-exec-2</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.citibank.enroll.customers.service.impl.EnrollmentProcessImpl category">com.citibank.enroll.customers.service.impl.EnrollmentProcessImpl</td>
+<td>EnrollmentProcessImpl.java:39</td>
+<td title="Message">EnrollmentProcessImpl Request </td>
+</tr>
+
+<tr>
+<td>193018</td>
+<td title="http-nio-9999-exec-2 thread">http-nio-9999-exec-2</td>
+<td title="Level">INFO</td>
+<td title="com.citibank.enroll.customers.svcclient.impl.CardverifyServicClientImpl category">com.citibank.enroll.customers.svcclient.impl.CardverifyServicClientImpl</td>
+<td>CardverifyServicClientImpl.java:18</td>
+<td title="Message">Entered into Card Verify service CardverifyServicClientReq(cardNo=6104001500002436, cvvNo=176, expDate=176, nameOnCard=Prafull Kuamr)</td>
+</tr>
+
+<tr>
+<td>193018</td>
+<td title="http-nio-9999-exec-2 thread">http-nio-9999-exec-2</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.citibank.enroll.customers.svcclient.impl.CardverifyServicClientImpl category">com.citibank.enroll.customers.svcclient.impl.CardverifyServicClientImpl</td>
+<td>CardverifyServicClientImpl.java:20</td>
+<td title="Message">CardverifyServicClientImpl  Request </td>
+</tr>
+
+<tr>
+<td>193019</td>
+<td title="http-nio-9999-exec-2 thread">http-nio-9999-exec-2</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.citibank.enroll.customers.svcclient.impl.CardverifyServicClientImpl category">com.citibank.enroll.customers.svcclient.impl.CardverifyServicClientImpl</td>
+<td>CardverifyServicClientImpl.java:32</td>
+<td title="Message">CardverifyServicClientImpl  Exit</td>
+</tr>
+
+<tr>
+<td>193020</td>
+<td title="http-nio-9999-exec-2 thread">http-nio-9999-exec-2</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.citibank.enroll.customers.dao.impl.EnrollmentDAOImpl category">com.citibank.enroll.customers.dao.impl.EnrollmentDAOImpl</td>
+<td>EnrollmentDAOImpl.java:32</td>
+<td title="Message">Entered into EnrollmentDAOImpl</td>
+</tr>
+
+<tr>
+<td>193020</td>
+<td title="http-nio-9999-exec-2 thread">http-nio-9999-exec-2</td>
+<td title="Level">INFO</td>
+<td title="com.citibank.enroll.customers.dao.impl.EnrollmentDAOImpl category">com.citibank.enroll.customers.dao.impl.EnrollmentDAOImpl</td>
+<td>EnrollmentDAOImpl.java:34</td>
+<td title="Message">EnrollmentDAOImpl  RequestEnrollmentDAOReq(clientId=mbile, channelId=mbile, mobileNo=[9981886715, 7987037711], email=manishsahu354@gmail.com, cardNo=6104001500002436, cvvNo=176, expDate=03-25, nameOnCard=Prafull Kuamr)</td>
+</tr>
+
+<tr>
+<td>202856</td>
+<td title="http-nio-9999-exec-2 thread">http-nio-9999-exec-2</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.citibank.enroll.customers.dao.impl.EnrollmentDAOImpl category">com.citibank.enroll.customers.dao.impl.EnrollmentDAOImpl</td>
+<td>EnrollmentDAOImpl.java:119</td>
+<td title="Message">EnrollmentDAOImpl  Exit</td>
+</tr>
+
+<tr>
+<td>202857</td>
+<td title="http-nio-9999-exec-2 thread">http-nio-9999-exec-2</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.citibank.enroll.customers.service.impl.EnrollmentProcessImpl category">com.citibank.enroll.customers.service.impl.EnrollmentProcessImpl</td>
+<td>EnrollmentProcessImpl.java:61</td>
+<td title="Message">Exit from Enrollment Process</td>
+</tr>
+
+<tr>
+<td>202858</td>
+<td title="http-nio-9999-exec-2 thread">http-nio-9999-exec-2</td>
+<td title="Level">INFO</td>
+<td title="com.citibank.enroll.customers.controller.EnrollmentController category">com.citibank.enroll.customers.controller.EnrollmentController</td>
+<td>EnrollmentController.java:96</td>
+<td title="Message">Exit From Resouce Layer :: EnrollmentResourceRes(status=StatusBlock(respCode=good, respMsg=good, status=delivered))</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>HTML Layout Example</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Fri Sep 04 21:25:18 IST 2020<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="http-nio-9999-exec-10 thread">http-nio-9999-exec-10</td>
+<td title="Level">INFO</td>
+<td title="com.citibank.enroll.customers.controller.EnrollmentController22 category">com.citibank.enroll.customers.controller.EnrollmentController22</td>
+<td>EnrollmentController22.java:52</td>
+<td title="Message">Entered into Resouce Layer :: EnrollmentResourceReq(clientContext=ClientContext(clientId=string, channelId=string, requestid=string, msgTimeStamp=string), custInfo=CustmerInfo(mobileNo=[string], email=string, cardNo=string, cvvNo=string, expDate=string, nameOnCard=string), serviceDetails=com.citibank.enroll.customers.model.ServiceDetails@32c79c4b)</td>
+</tr>
+
+<tr>
+<td>12</td>
+<td title="http-nio-9999-exec-10 thread">http-nio-9999-exec-10</td>
+<td title="Level">INFO</td>
+<td title="com.citibank.enroll.customers.service.impl.EnrollmentProcessImpl category">com.citibank.enroll.customers.service.impl.EnrollmentProcessImpl</td>
+<td>EnrollmentProcessImpl.java:35</td>
+<td title="Message">Enter into Process  :: EnrollmentProcessReq(clientId=string, channelId=string, mobileNo=[string], email=string, cardNo=string, cvvNo=string, expDate=string, nameOnCard=string)</td>
+</tr>
+
+<tr>
+<td>12</td>
+<td title="http-nio-9999-exec-10 thread">http-nio-9999-exec-10</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.citibank.enroll.customers.service.impl.EnrollmentProcessImpl category">com.citibank.enroll.customers.service.impl.EnrollmentProcessImpl</td>
+<td>EnrollmentProcessImpl.java:39</td>
+<td title="Message">EnrollmentProcessImpl Request </td>
+</tr>
+
+<tr>
+<td>13</td>
+<td title="http-nio-9999-exec-10 thread">http-nio-9999-exec-10</td>
+<td title="Level">INFO</td>
+<td title="com.citibank.enroll.customers.svcclient.impl.CardverifyServicClientImpl category">com.citibank.enroll.customers.svcclient.impl.CardverifyServicClientImpl</td>
+<td>CardverifyServicClientImpl.java:18</td>
+<td title="Message">Entered into Card Verify service CardverifyServicClientReq(cardNo=string, cvvNo=string, expDate=string, nameOnCard=string)</td>
+</tr>
+
+<tr>
+<td>13</td>
+<td title="http-nio-9999-exec-10 thread">http-nio-9999-exec-10</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.citibank.enroll.customers.svcclient.impl.CardverifyServicClientImpl category">com.citibank.enroll.customers.svcclient.impl.CardverifyServicClientImpl</td>
+<td>CardverifyServicClientImpl.java:20</td>
+<td title="Message">CardverifyServicClientImpl  Request </td>
+</tr>
+
+<tr>
+<td>14</td>
+<td title="http-nio-9999-exec-10 thread">http-nio-9999-exec-10</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.citibank.enroll.customers.svcclient.impl.CardverifyServicClientImpl category">com.citibank.enroll.customers.svcclient.impl.CardverifyServicClientImpl</td>
+<td>CardverifyServicClientImpl.java:32</td>
+<td title="Message">CardverifyServicClientImpl  Exit</td>
+</tr>
+
+<tr>
+<td>17</td>
+<td title="http-nio-9999-exec-10 thread">http-nio-9999-exec-10</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.citibank.enroll.customers.dao.impl.EnrollmentDAOImpl category">com.citibank.enroll.customers.dao.impl.EnrollmentDAOImpl</td>
+<td>EnrollmentDAOImpl.java:34</td>
+<td title="Message">Entered into EnrollmentDAOImpl</td>
+</tr>
+
+<tr>
+<td>18</td>
+<td title="http-nio-9999-exec-10 thread">http-nio-9999-exec-10</td>
+<td title="Level">INFO</td>
+<td title="com.citibank.enroll.customers.dao.impl.EnrollmentDAOImpl category">com.citibank.enroll.customers.dao.impl.EnrollmentDAOImpl</td>
+<td>EnrollmentDAOImpl.java:36</td>
+<td title="Message">EnrollmentDAOImpl  RequestEnrollmentDAOReq(clientId=string, channelId=string, mobileNo=[string], email=string, cardNo=string, cvvNo=string, expDate=string, nameOnCard=string)</td>
+</tr>
+
+<tr>
+<td>9073</td>
+<td title="http-nio-9999-exec-10 thread">http-nio-9999-exec-10</td>
+<td title="Level"><font color="#993300"><strong>WARN</strong></font></td>
+<td title="com.citibank.enroll.customers.dao.impl.EnrollmentDAOImpl category">com.citibank.enroll.customers.dao.impl.EnrollmentDAOImpl</td>
+<td>EnrollmentDAOImpl.java:112</td>
+<td title="Message">javax.mail.SendFailedException: Invalid Addresses;
+  nested exception is:
+	com.sun.mail.smtp.SMTPAddressFailedException: 553 5.1.3 The recipient address &lt;string&gt; is not a valid RFC-5321 address. q34sm5996986pgl.28 - gsmtp
+</td>
+</tr>
+
+<tr>
+<td>9074</td>
+<td title="http-nio-9999-exec-10 thread">http-nio-9999-exec-10</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.citibank.enroll.customers.dao.impl.EnrollmentDAOImpl category">com.citibank.enroll.customers.dao.impl.EnrollmentDAOImpl</td>
+<td>EnrollmentDAOImpl.java:121</td>
+<td title="Message">EnrollmentDAOImpl  Exit</td>
+</tr>
+
+<tr>
+<td>9075</td>
+<td title="http-nio-9999-exec-10 thread">http-nio-9999-exec-10</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.citibank.enroll.customers.service.impl.EnrollmentProcessImpl category">com.citibank.enroll.customers.service.impl.EnrollmentProcessImpl</td>
+<td>EnrollmentProcessImpl.java:61</td>
+<td title="Message">Exit from Enrollment Process</td>
+</tr>
+
+<tr>
+<td>9076</td>
+<td title="http-nio-9999-exec-10 thread">http-nio-9999-exec-10</td>
+<td title="Level">INFO</td>
+<td title="com.citibank.enroll.customers.controller.EnrollmentController22 category">com.citibank.enroll.customers.controller.EnrollmentController22</td>
+<td>EnrollmentController22.java:64</td>
+<td title="Message">Exit From Resouce Layer :: EnrollmentResourceRes(status=StatusBlock(respCode=good, respMsg=good, status=delivered))</td>
+</tr>
+
+<tr>
+<td>677269</td>
+<td title="http-nio-9999-exec-2 thread">http-nio-9999-exec-2</td>
+<td title="Level">INFO</td>
+<td title="com.citibank.enroll.customers.controller.EnrollmentController category">com.citibank.enroll.customers.controller.EnrollmentController</td>
+<td>EnrollmentController.java:52</td>
+<td title="Message">Entered into Resouce Layer :: EnrollmentResourceReq(clientContext=ClientContext(clientId=C-101, channelId=null, requestid=null, msgTimeStamp=Fri Jul 24 20:15:59 IST 2020), custInfo=CustmerInfo(mobileNo=[9981886715, 7987037711], email=manishsahu354@gmail.com, cardNo=6104001500002436, cvvNo=176, expDate=03-25, nameOnCard=Prafull Kuamr), serviceDetails=com.citibank.enroll.customers.model.ServiceDetails@2744daef)</td>
+</tr>
+
+<tr>
+<td>677270</td>
+<td title="http-nio-9999-exec-2 thread">http-nio-9999-exec-2</td>
+<td title="Level">INFO</td>
+<td title="com.citibank.enroll.customers.controller.EnrollmentController category">com.citibank.enroll.customers.controller.EnrollmentController</td>
+<td>EnrollmentController.java:96</td>
+<td title="Message">Exit From Resouce Layer :: EnrollmentResourceRes(status=StatusBlock(respCode=err003, respMsg=channel is invalid, status=null))</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>HTML Layout Example</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Fri Sep 04 22:14:13 IST 2020<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="http-nio-9999-exec-1 thread">http-nio-9999-exec-1</td>
+<td title="Level">INFO</td>
+<td title="com.citibank.enroll.customers.controller.EnrollmentController category">com.citibank.enroll.customers.controller.EnrollmentController</td>
+<td>EnrollmentController.java:52</td>
+<td title="Message">Entered into Resouce Layer :: EnrollmentResourceReq(clientContext=ClientContext(clientId=C-101, channelId=null, requestid=null, msgTimeStamp=Fri Jul 24 20:15:59 IST 2020), custInfo=CustmerInfo(mobileNo=[9981886715, 7987037711], email=manishsahu354@gmail.com, cardNo=6104001500002436, cvvNo=176, expDate=03-25, nameOnCard=Prafull Kuamr), serviceDetails=com.citibank.enroll.customers.model.ServiceDetails@1044ac44)</td>
+</tr>
+
+<tr>
+<td>11</td>
+<td title="http-nio-9999-exec-1 thread">http-nio-9999-exec-1</td>
+<td title="Level">INFO</td>
+<td title="com.citibank.enroll.customers.controller.EnrollmentController category">com.citibank.enroll.customers.controller.EnrollmentController</td>
+<td>EnrollmentController.java:96</td>
+<td title="Message">Exit From Resouce Layer :: EnrollmentResourceRes(status=StatusBlock(respCode=err003, respMsg=channel is invalid, status=null))</td>
+</tr>
+
+<tr>
+<td>25828</td>
+<td title="http-nio-9999-exec-3 thread">http-nio-9999-exec-3</td>
+<td title="Level">INFO</td>
+<td title="com.citibank.enroll.customers.controller.EnrollmentController category">com.citibank.enroll.customers.controller.EnrollmentController</td>
+<td>EnrollmentController.java:52</td>
+<td title="Message">Entered into Resouce Layer :: EnrollmentResourceReq(clientContext=ClientContext(clientId=C-101, channelId=mbile, requestid=null, msgTimeStamp=Fri Jul 24 20:15:59 IST 2020), custInfo=CustmerInfo(mobileNo=[9981886715, 7987037711], email=prafullsahu2217@gmail.com, cardNo=6104001500002436, cvvNo=176, expDate=03-25, nameOnCard=Prafull Kuamr), serviceDetails=com.citibank.enroll.customers.model.ServiceDetails@7cdb2ef8)</td>
+</tr>
+
+<tr>
+<td>25830</td>
+<td title="http-nio-9999-exec-3 thread">http-nio-9999-exec-3</td>
+<td title="Level">INFO</td>
+<td title="com.citibank.enroll.customers.service.impl.EnrollmentProcessImpl category">com.citibank.enroll.customers.service.impl.EnrollmentProcessImpl</td>
+<td>EnrollmentProcessImpl.java:35</td>
+<td title="Message">Enter into Process  :: EnrollmentProcessReq(clientId=C-101, channelId=mbile, mobileNo=[9981886715, 7987037711], email=prafullsahu2217@gmail.com, cardNo=6104001500002436, cvvNo=176, expDate=03-25, nameOnCard=Prafull Kuamr)</td>
+</tr>
+
+<tr>
+<td>25831</td>
+<td title="http-nio-9999-exec-3 thread">http-nio-9999-exec-3</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.citibank.enroll.customers.service.impl.EnrollmentProcessImpl category">com.citibank.enroll.customers.service.impl.EnrollmentProcessImpl</td>
+<td>EnrollmentProcessImpl.java:39</td>
+<td title="Message">EnrollmentProcessImpl Request </td>
+</tr>
+
+<tr>
+<td>25832</td>
+<td title="http-nio-9999-exec-3 thread">http-nio-9999-exec-3</td>
+<td title="Level">INFO</td>
+<td title="com.citibank.enroll.customers.svcclient.impl.CardverifyServicClientImpl category">com.citibank.enroll.customers.svcclient.impl.CardverifyServicClientImpl</td>
+<td>CardverifyServicClientImpl.java:18</td>
+<td title="Message">Entered into Card Verify service CardverifyServicClientReq(cardNo=6104001500002436, cvvNo=176, expDate=176, nameOnCard=Prafull Kuamr)</td>
+</tr>
+
+<tr>
+<td>25833</td>
+<td title="http-nio-9999-exec-3 thread">http-nio-9999-exec-3</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.citibank.enroll.customers.svcclient.impl.CardverifyServicClientImpl category">com.citibank.enroll.customers.svcclient.impl.CardverifyServicClientImpl</td>
+<td>CardverifyServicClientImpl.java:20</td>
+<td title="Message">CardverifyServicClientImpl  Request </td>
+</tr>
+
+<tr>
+<td>25833</td>
+<td title="http-nio-9999-exec-3 thread">http-nio-9999-exec-3</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.citibank.enroll.customers.svcclient.impl.CardverifyServicClientImpl category">com.citibank.enroll.customers.svcclient.impl.CardverifyServicClientImpl</td>
+<td>CardverifyServicClientImpl.java:32</td>
+<td title="Message">CardverifyServicClientImpl  Exit</td>
+</tr>
+
+<tr>
+<td>25834</td>
+<td title="http-nio-9999-exec-3 thread">http-nio-9999-exec-3</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.citibank.enroll.customers.dao.impl.EnrollmentDAOImpl category">com.citibank.enroll.customers.dao.impl.EnrollmentDAOImpl</td>
+<td>EnrollmentDAOImpl.java:34</td>
+<td title="Message">Entered into EnrollmentDAOImpl</td>
+</tr>
+
+<tr>
+<td>25835</td>
+<td title="http-nio-9999-exec-3 thread">http-nio-9999-exec-3</td>
+<td title="Level">INFO</td>
+<td title="com.citibank.enroll.customers.dao.impl.EnrollmentDAOImpl category">com.citibank.enroll.customers.dao.impl.EnrollmentDAOImpl</td>
+<td>EnrollmentDAOImpl.java:36</td>
+<td title="Message">EnrollmentDAOImpl  RequestEnrollmentDAOReq(clientId=mbile, channelId=mbile, mobileNo=[9981886715, 7987037711], email=prafullsahu2217@gmail.com, cardNo=6104001500002436, cvvNo=176, expDate=03-25, nameOnCard=Prafull Kuamr)</td>
+</tr>
+
+<tr>
+<td>314866</td>
+<td title="http-nio-9999-exec-2 thread">http-nio-9999-exec-2</td>
+<td title="Level">INFO</td>
+<td title="com.citibank.enroll.customers.controller.EnrollmentController category">com.citibank.enroll.customers.controller.EnrollmentController</td>
+<td>EnrollmentController.java:52</td>
+<td title="Message">Entered into Resouce Layer :: EnrollmentResourceReq(clientContext=ClientContext(clientId=C-101, channelId=mbile, requestid=null, msgTimeStamp=Fri Jul 24 20:15:59 IST 2020), custInfo=CustmerInfo(mobileNo=[9981886715, 7987037711], email=prafullsahu2217@gmail.com, cardNo=6104001500002436, cvvNo=176, expDate=03-25, nameOnCard=Prafull Kuamr), serviceDetails=com.citibank.enroll.customers.model.ServiceDetails@65649f70)</td>
+</tr>
+
+<tr>
+<td>314868</td>
+<td title="http-nio-9999-exec-2 thread">http-nio-9999-exec-2</td>
+<td title="Level">INFO</td>
+<td title="com.citibank.enroll.customers.service.impl.EnrollmentProcessImpl category">com.citibank.enroll.customers.service.impl.EnrollmentProcessImpl</td>
+<td>EnrollmentProcessImpl.java:35</td>
+<td title="Message">Enter into Process  :: EnrollmentProcessReq(clientId=C-101, channelId=mbile, mobileNo=[9981886715, 7987037711], email=prafullsahu2217@gmail.com, cardNo=6104001500002436, cvvNo=176, expDate=03-25, nameOnCard=Prafull Kuamr)</td>
+</tr>
+
+<tr>
+<td>314869</td>
+<td title="http-nio-9999-exec-2 thread">http-nio-9999-exec-2</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.citibank.enroll.customers.service.impl.EnrollmentProcessImpl category">com.citibank.enroll.customers.service.impl.EnrollmentProcessImpl</td>
+<td>EnrollmentProcessImpl.java:39</td>
+<td title="Message">EnrollmentProcessImpl Request </td>
+</tr>
+
+<tr>
+<td>314869</td>
+<td title="http-nio-9999-exec-2 thread">http-nio-9999-exec-2</td>
+<td title="Level">INFO</td>
+<td title="com.citibank.enroll.customers.svcclient.impl.CardverifyServicClientImpl category">com.citibank.enroll.customers.svcclient.impl.CardverifyServicClientImpl</td>
+<td>CardverifyServicClientImpl.java:18</td>
+<td title="Message">Entered into Card Verify service CardverifyServicClientReq(cardNo=6104001500002436, cvvNo=176, expDate=176, nameOnCard=Prafull Kuamr)</td>
+</tr>
+
+<tr>
+<td>314869</td>
+<td title="http-nio-9999-exec-2 thread">http-nio-9999-exec-2</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.citibank.enroll.customers.svcclient.impl.CardverifyServicClientImpl category">com.citibank.enroll.customers.svcclient.impl.CardverifyServicClientImpl</td>
+<td>CardverifyServicClientImpl.java:20</td>
+<td title="Message">CardverifyServicClientImpl  Request </td>
+</tr>
+
+<tr>
+<td>314870</td>
+<td title="http-nio-9999-exec-2 thread">http-nio-9999-exec-2</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.citibank.enroll.customers.svcclient.impl.CardverifyServicClientImpl category">com.citibank.enroll.customers.svcclient.impl.CardverifyServicClientImpl</td>
+<td>CardverifyServicClientImpl.java:32</td>
+<td title="Message">CardverifyServicClientImpl  Exit</td>
+</tr>
+
+<tr>
+<td>314872</td>
+<td title="http-nio-9999-exec-2 thread">http-nio-9999-exec-2</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.citibank.enroll.customers.dao.impl.EnrollmentDAOImpl category">com.citibank.enroll.customers.dao.impl.EnrollmentDAOImpl</td>
+<td>EnrollmentDAOImpl.java:34</td>
+<td title="Message">Entered into EnrollmentDAOImpl</td>
+</tr>
+
+<tr>
+<td>314872</td>
+<td title="http-nio-9999-exec-2 thread">http-nio-9999-exec-2</td>
+<td title="Level">INFO</td>
+<td title="com.citibank.enroll.customers.dao.impl.EnrollmentDAOImpl category">com.citibank.enroll.customers.dao.impl.EnrollmentDAOImpl</td>
+<td>EnrollmentDAOImpl.java:36</td>
+<td title="Message">EnrollmentDAOImpl  RequestEnrollmentDAOReq(clientId=mbile, channelId=mbile, mobileNo=[9981886715, 7987037711], email=prafullsahu2217@gmail.com, cardNo=6104001500002436, cvvNo=176, expDate=03-25, nameOnCard=Prafull Kuamr)</td>
+</tr>
+
+<tr>
+<td>368150</td>
+<td title="http-nio-9999-exec-2 thread">http-nio-9999-exec-2</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.citibank.enroll.customers.dao.impl.EnrollmentDAOImpl category">com.citibank.enroll.customers.dao.impl.EnrollmentDAOImpl</td>
+<td>EnrollmentDAOImpl.java:121</td>
+<td title="Message">EnrollmentDAOImpl  Exit</td>
+</tr>
+
+<tr>
+<td>368151</td>
+<td title="http-nio-9999-exec-2 thread">http-nio-9999-exec-2</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.citibank.enroll.customers.service.impl.EnrollmentProcessImpl category">com.citibank.enroll.customers.service.impl.EnrollmentProcessImpl</td>
+<td>EnrollmentProcessImpl.java:61</td>
+<td title="Message">Exit from Enrollment Process</td>
+</tr>
+
+<tr>
+<td>368152</td>
+<td title="http-nio-9999-exec-2 thread">http-nio-9999-exec-2</td>
+<td title="Level">INFO</td>
+<td title="com.citibank.enroll.customers.controller.EnrollmentController category">com.citibank.enroll.customers.controller.EnrollmentController</td>
+<td>EnrollmentController.java:96</td>
+<td title="Message">Exit From Resouce Layer :: EnrollmentResourceRes(status=StatusBlock(respCode=good, respMsg=good, status=delivered))</td>
+</tr>
